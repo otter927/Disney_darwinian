@@ -1,0 +1,86 @@
+
+
+grep finalreward log_sim_darwinian_hopf_original_0.txt > log_sim_darwinian_hopf_original_0_dw.txt
+grep finalreward log_sim_darwinian_hopf_0.txt > log_sim_darwinian_hopf_0_dw.txt
+grep finalreward log_sim_darwinian_0.txt > log_sim_darwinian_0_dw.txt
+#grep finalreward log_sim_darwinian_hopf_original_meta_0.txt > log_sim_darwinian_hopf_original_meta_0_dw.txt
+#grep finalreward log_sim_darwinian_meta_0.txt > log_sim_darwinian_meta_0_dw.txt
+grep finalreward log_sim_random_0.txt > log_sim_random_0_dw.txt
+
+#grep finalreward log_sim_darwinian_hopf_original_1.txt > log_sim_darwinian_hopf_original_1_dw.txt
+#grep finalreward log_sim_darwinian_hopf_1.txt> log_sim_darwinian_hopf_1_dw.txt
+#grep finalreward log_sim_darwinian_1.txt > log_sim_darwinian_1_dw.txt
+#grep finalreward log_sim_darwinian_hopf_original_meta_1.txt > log_sim_darwinian_hopf_original_meta_1_dw.txt
+#grep finalreward log_sim_darwinian_meta_1.txt > log_sim_darwinian_meta_1_dw.txt
+#grep finalreward log_sim_random_1.txt > log_sim_random_1_dw.txt
+
+#grep finalreward log_sim_darwinian_hopf_original_2.txt > log_sim_darwinian_hopf_original_2_dw.txt
+#grep finalreward log_sim_darwinian_hopf_2.txt> log_sim_darwinian_hopf_2_dw.txt
+#grep finalreward log_sim_darwinian_2.txt > log_sim_darwinian_2_dw.txt
+#grep finalreward log_sim_darwinian_hopf_original_meta_2.txt > log_sim_darwinian_hopf_original_meta_2_dw.txt
+#grep finalreward log_sim_darwinian_meta_2.txt > log_sim_darwinian_meta_2_dw.txt
+#grep finalreward log_sim_random_2.txt > log_sim_random_2_dw.txt
+
+#grep finalreward log_sim_darwinian_hopf_original_3.txt > log_sim_darwinian_hopf_original_3_dw.txt
+#grep finalreward log_sim_darwinian_hopf_3.txt> log_sim_darwinian_hopf_3_dw.txt
+#grep finalreward log_sim_darwinian_3.txt > log_sim_darwinian_3_dw.txt
+#grep finalreward log_sim_darwinian_hopf_original_meta_3.txt > log_sim_darwinian_hopf_original_meta_3_dw.txt
+#grep finalreward log_sim_darwinian_meta_3.txt > log_sim_darwinian_meta_3_dw.txt
+#grep finalreward log_sim_random_3.txt > log_sim_random_3_dw.txt
+
+#grep finalreward log_sim_darwinian_hopf_original_4.txt > log_sim_darwinian_hopf_original_4_dw.txt
+#grep finalreward log_sim_darwinian_hopf_4.txt> log_sim_darwinian_hopf_4_dw.txt
+#grep finalreward log_sim_darwinian_4.txt > log_sim_darwinian_4_dw.txt
+#grep finalreward log_sim_darwinian_hopf_original_meta_4.txt > log_sim_darwinian_hopf_original_meta_4_dw.txt
+#grep finalreward log_sim_darwinian_meta_4.txt > log_sim_darwinian_meta_4_dw.txt
+#grep finalreward log_sim_random_4.txt > log_sim_random_4_dw.txt
+
+#grep finalreward log_sim_darwinian_hopf_original_5.txt > log_sim_darwinian_hopf_original_5_dw.txt
+#grep finalreward log_sim_darwinian_hopf_5.txt> log_sim_darwinian_hopf_5_dw.txt
+#grep finalreward log_sim_darwinian_5.txt > log_sim_darwinian_5_dw.txt
+#grep finalreward log_sim_darwinian_hopf_original_meta_5.txt > log_sim_darwinian_hopf_original_meta_5_dw.txt
+#grep finalreward log_sim_darwinian_meta_5.txt > log_sim_darwinian_meta_5_dw.txt
+#grep finalreward log_sim_random_5.txt > log_sim_random_5_dw.txt
+
+#grep finalreward log_sim_darwinian_hopf_original_6.txt > log_sim_darwinian_hopf_original_6_dw.txt
+#grep finalreward log_sim_darwinian_hopf_6.txt> log_sim_darwinian_hopf_6_dw.txt
+#grep finalreward log_sim_darwinian_6.txt > log_sim_darwinian_6_dw.txt
+#grep finalreward log_sim_darwinian_hopf_original_meta_6.txt > log_sim_darwinian_hopf_original_meta_6_dw.txt
+#grep finalreward log_sim_darwinian_meta_6.txt > log_sim_darwinian_meta_6_dw.txt
+#grep finalreward log_sim_random_6.txt > log_sim_random_6_dw.txt
+
+#grep finalreward log_sim_darwinian_hopf_original_7.txt > log_sim_darwinian_hopf_original_7_dw.txt
+#grep finalreward log_sim_darwinian_hopf_7.txt> log_sim_darwinian_hopf_7_dw.txt
+#grep finalreward log_sim_darwinian_7.txt > log_sim_darwinian_7_dw.txt
+#grep finalreward log_sim_darwinian_hopf_original_meta_7.txt > log_sim_darwinian_hopf_original_meta_7_dw.txt
+#grep finalreward log_sim_darwinian_meta_7.txt > log_sim_darwinian_meta_7_dw.txt
+#grep finalreward log_sim_random_7.txt > log_sim_random_7_dw.txt
+
+#grep finalreward log_sim_darwinian_hopf_original_8.txt > log_sim_darwinian_hopf_original_8_dw.txt
+#grep finalreward log_sim_darwinian_hopf_8.txt> log_sim_darwinian_hopf_8_dw.txt
+#grep finalreward log_sim_darwinian_8.txt > log_sim_darwinian_8_dw.txt
+#grep finalreward log_sim_darwinian_hopf_original_meta_8.txt > log_sim_darwinian_hopf_original_meta_8_dw.txt
+#grep finalreward log_sim_darwinian_meta_8.txt > log_sim_darwinian_meta_8_dw.txt
+#grep finalreward log_sim_random_8.txt > log_sim_random_8_dw.txt
+
+#grep finalreward log_sim_darwinian_hopf_original_9.txt > log_sim_darwinian_hopf_original_9_dw.txt
+#grep finalreward log_sim_darwinian_hopf_9.txt> log_sim_darwinian_hopf_9_dw.txt
+#grep finalreward log_sim_darwinian_9.txt > log_sim_darwinian_9_dw.txt
+#grep finalreward log_sim_darwinian_hopf_original_meta_9.txt > log_sim_darwinian_hopf_original_meta_9_dw.txt
+#grep finalreward log_sim_darwinian_meta_9.txt > log_sim_darwinian_meta_9_dw.txt
+#grep finalreward log_sim_random_9.txt > log_sim_random_9_dw.txt
+
+
+
+#grep finalreward log_sim_darwinian_0_greedy.txt > log_sim_darwinian_0_greedy_dw.txt
+#grep finalreward log_sim_darwinian_1_greedy.txt > log_sim_darwinian_1_greedy_dw.txt
+#grep finalreward log_sim_darwinian_2_greedy.txt > log_sim_darwinian_2_greedy_dw.txt
+#grep finalreward log_sim_darwinian_3_greedy.txt > log_sim_darwinian_3_greedy_dw.txt
+#grep finalreward log_sim_darwinian_4_greedy.txt > log_sim_darwinian_4_greedy_dw.txt
+#grep finalreward log_sim_darwinian_5_greedy.txt > log_sim_darwinian_5_greedy_dw.txt
+#grep finalreward log_sim_darwinian_6_greedy.txt > log_sim_darwinian_6_greedy_dw.txt
+#grep finalreward log_sim_darwinian_7_greedy.txt > log_sim_darwinian_7_greedy_dw.txt
+#grep finalreward log_sim_darwinian_8_greedy.txt > log_sim_darwinian_8_greedy_dw.txt
+#grep finalreward log_sim_darwinian_9_greedy.txt > log_sim_darwinian_9_greedy_dw.txt
+
+

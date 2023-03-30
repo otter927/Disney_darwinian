@@ -1,0 +1,63 @@
+#include <stdio.h>
+#include <string> 
+#include <cstring> 
+#include <cmath> 
+#include <vector>
+#include <list>
+
+#pragma once
+
+using namespace std;
+
+//class BS():
+//class MBS(BS):
+//class SBS(BS):
+//class UE():
+//class Link():
+//class Simulator():
+
+//class Simulator;
+
+class BS;
+class UE;
+class Link;
+
+
+class Simulator
+{
+
+    public: 
+    vector<Link *> Link_list;
+    vector<BS *> BS_list;
+    vector<UE *> UE_list;
+    
+    vector<double> throughput_ul_list;
+    vector<double> throughput_dl_list;
+    vector<double> throughput_ul_mbs_list;
+    vector<double> throughput_dl_mbs_list;
+    vector<double> throughput_ul_sbs_list;
+    vector<double> throughput_dl_sbs_list;
+
+    int ul_random[10][18];// = np.random.poisson(self.arrival_rate, (1000, 18000)) ##max_num
+    int dl_random[10][18];// = np.random.poisson(self.arrival_rate, (1000, 18000)) ##max_num
+
+    
+    double arrival_rate;
+    
+    int time_step;
+   
+    
+    Simulator();
+    double path_loss(BS *lbs, UE *lue, int direction);
+    double shadowing(BS *lbs, UE *lue, int direction);
+    double signal(BS *lbs, UE *lue, int direction);
+    double capacity_calculation();
+    double execute_sim_darwinian(double position_list[][100]);
+    void del_link_ul(Link *x);
+    void del_link_dl(Link *x);
+    void set_send_recieve();
+    void add_link(Link *x);
+    void move_file(double position_list[][100]);
+
+};
+

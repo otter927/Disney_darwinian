@@ -1,0 +1,54 @@
+import os
+import tensorflow as tf
+import numpy as np
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Embedding, TimeDistributed, Dense, SimpleRNN, Activation
+from keras_imp_rnn_tdd_ini_dqn import tdd_ini
+from keras_imp_rnn_tdd_foward_dqn import tdd_foward
+from keras_imp_rnn_tdd_renew_learning_input import tdd_renew_learning_input
+from keras_imp_rnn_tdd_renew_foward import tdd_renew_foward
+from keras_imp_rnn_tdd_learn_dqn import tdd_learn
+
+gene=1
+g=gene-1
+#alpha=0.1
+#alpha=0.5
+alpha=0.9
+#finals=2
+#finals=100
+finals=5040
+#finals=1000
+j=0
+
+#'''
+os.system(': > learning_input.txt')
+os.system(': > learning_reward.txt')
+os.system(': > learning_input_tmp.txt')
+os.system(': > learning_output0.txt')
+os.system(': > "scr_output"$j"_foward.txt"')
+os.system(': > scr_output_learn.txt')
+os.system(': > "scr_output"$j"_learn.txt"')
+
+print("##############1")
+
+agent = tdd_ini(j)
+os.system('cp foward_input_ini.txt foward_input.txt')
+print("##############2")
+#'''
+
+#i=0
+for i in range(0, finals+1, 1):
+
+    print("i:"+str(i))
+    print("tdd_foward")
+    tdd_foward(j, agent)
+    print("tdd_renew_learning_input")
+    tdd_renew_learning_input()
+    print("./out_learn_dqn "+str(alpha)+" "+str(i)+" "+str(gene)+" >> scr_output_learn.txt")
+    os.system("./out_learn_dqn "+str(alpha)+" "+str(i)+" "+str(gene)+" >> scr_output_learn.txt")
+    print("tdd_renew_foward")
+    tdd_renew_foward()
+    
+    tdd_learn(j, agent)
+
+

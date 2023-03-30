@@ -1,0 +1,269 @@
+storedC: 0: 1	storedCA: 0: 1	
+config:['U', 'U', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']
+MBS0: (1000, 500, 35): 1
+plot(1000, 500, 'yo')
+pre def env9
+pre def agent
+states
+actions
+pre env reset
+reset
+states
+Ped0: (1200, 1200, 0)
+plot(1200, 1200, 0, 'yx')
+Veh1: (1200, 900, 0)
+plot(1200, 900, 0, 'yx')
+Ped2: (600, 600, 0)
+plot(600, 600, 0, 'yx')
+Veh3: (900, 600, 0)
+plot(900, 600, 0, 'yx')
+Veh4: (900, 1200, 0)
+plot(900, 1200, 0, 'yx')
+Veh5: (1200, 900, 0)
+plot(1200, 900, 0, 'yx')
+Veh6: (1200, 1200, 0)
+plot(1200, 1200, 0, 'yx')
+Ped7: (300, 300, 0)
+plot(300, 300, 0, 'yx')
+Veh8: (300, 1200, 0)
+plot(300, 1200, 0, 'yx')
+Veh9: (600, 900, 0)
+plot(600, 900, 0, 'yx')
+Ped10: (600, 600, 0)
+plot(600, 600, 0, 'yx')
+Ped11: (1200, 300, 0)
+plot(1200, 300, 0, 'yx')
+config:['U', 'U', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']
+MBS1: (567, 750, 35): 2
+plot(567, 750, 'mo')
+pre def env9
+pre def agent
+states
+actions
+pre env reset
+reset
+states
+Ped12: (600, 300, 0)
+plot(600, 300, 0, 'mx')
+Veh13: (1200, 1200, 0)
+plot(1200, 1200, 0, 'mx')
+Ped14: (300, 1200, 0)
+plot(300, 1200, 0, 'mx')
+Veh15: (1200, 300, 0)
+plot(1200, 300, 0, 'mx')
+Veh16: (600, 300, 0)
+plot(600, 300, 0, 'mx')
+Veh17: (300, 300, 0)
+plot(300, 300, 0, 'mx')
+Veh18: (1200, 600, 0)
+plot(1200, 600, 0, 'mx')
+Veh19: (600, 1200, 0)
+plot(600, 1200, 0, 'mx')
+Veh20: (900, 600, 0)
+plot(900, 600, 0, 'mx')
+Veh21: (900, 300, 0)
+plot(900, 300, 0, 'mx')
+Ped22: (600, 900, 0)
+plot(600, 900, 0, 'mx')
+Veh23: (1200, 600, 0)
+plot(1200, 600, 0, 'mx')
+config:['U', 'U', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']
+MBS2: (1000, 1000, 35): 3
+plot(1000, 1000, 'co')
+pre def env9
+pre def agent
+states
+actions
+pre env reset
+reset
+states
+Ped24: (300, 300, 0)
+plot(300, 300, 0, 'cx')
+Veh25: (900, 900, 0)
+plot(900, 900, 0, 'cx')
+Veh26: (600, 1200, 0)
+plot(600, 1200, 0, 'cx')
+Veh27: (1200, 900, 0)
+plot(1200, 900, 0, 'cx')
+Veh28: (900, 1200, 0)
+plot(900, 1200, 0, 'cx')
+Veh29: (1200, 600, 0)
+plot(1200, 600, 0, 'cx')
+Ped30: (600, 300, 0)
+plot(600, 300, 0, 'cx')
+Veh31: (600, 900, 0)
+plot(600, 900, 0, 'cx')
+Veh32: (1200, 1200, 0)
+plot(1200, 1200, 0, 'cx')
+Veh33: (900, 900, 0)
+plot(900, 900, 0, 'cx')
+Veh34: (600, 1200, 0)
+plot(600, 1200, 0, 'cx')
+Ped35: (600, 1200, 0)
+plot(600, 1200, 0, 'cx')
+config:['U', 'U', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']
+SBS0: (300, 300, 10): 4
+plot(300, 300, 'mo')
+pre def env9
+pre def agent
+states
+actions
+pre env reset
+reset
+states
+config:['U', 'U', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']
+SBS1: (300, 600, 10): 5
+plot(300, 600, 'mo')
+pre def env9
+pre def agent
+states
+actions
+pre env reset
+reset
+states
+config:['U', 'U', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']
+SBS2: (300, 900, 10): 6
+plot(300, 900, 'mo')
+pre def env9
+pre def agent
+states
+actions
+pre env reset
+reset
+states
+config:['U', 'U', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']
+SBS3: (300, 1200, 10): 7
+plot(300, 1200, 'mo')
+pre def env9
+pre def agent
+states
+actions
+pre env reset
+reset
+states
+config:['U', 'U', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']
+SBS4: (600, 300, 10): 8
+plot(600, 300, 'yo')
+pre def env9
+pre def agent
+states
+actions
+pre env reset
+reset
+states
+config:['U', 'U', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']
+SBS5: (600, 600, 10): 9
+plot(600, 600, 'mo')
+pre def env9
+pre def agent
+states
+actions
+pre env reset
+reset
+states
+config:['U', 'U', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']
+SBS6: (600, 900, 10): 10
+plot(600, 900, 'mo')
+pre def env9
+pre def agent
+states
+actions
+pre env reset
+reset
+states
+config:['U', 'U', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']
+SBS7: (600, 1200, 10): 11
+plot(600, 1200, 'co')
+pre def env9
+pre def agent
+states
+actions
+pre env reset
+reset
+states
+config:['U', 'U', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']
+SBS8: (900, 300, 10): 12
+plot(900, 300, 'yo')
+pre def env9
+pre def agent
+states
+actions
+pre env reset
+reset
+states
+config:['U', 'U', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']
+SBS9: (900, 600, 10): 13
+plot(900, 600, 'yo')
+pre def env9
+pre def agent
+states
+actions
+pre env reset
+reset
+states
+config:['U', 'U', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']
+SBS10: (900, 900, 10): 14
+plot(900, 900, 'co')
+pre def env9
+pre def agent
+states
+actions
+pre env reset
+reset
+states
+config:['U', 'U', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']
+SBS11: (900, 1200, 10): 15
+plot(900, 1200, 'co')
+pre def env9
+pre def agent
+states
+actions
+pre env reset
+reset
+states
+config:['U', 'U', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']
+SBS12: (1200, 300, 10): 16
+plot(1200, 300, 'yo')
+pre def env9
+pre def agent
+states
+actions
+pre env reset
+reset
+states
+config:['U', 'U', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']
+SBS13: (1200, 600, 10): 17
+plot(1200, 600, 'yo')
+pre def env9
+pre def agent
+states
+actions
+pre env reset
+reset
+states
+config:['U', 'U', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']
+SBS14: (1200, 900, 10): 18
+plot(1200, 900, 'co')
+pre def env9
+pre def agent
+states
+actions
+pre env reset
+reset
+states
+config:['U', 'U', 'D', 'D', 'D', 'D', 'D', 'D', 'D', 'D']
+SBS15: (1200, 1200, 10): 19
+plot(1200, 1200, 'co')
+pre def env9
+pre def agent
+states
+actions
+pre env reset
+reset
+states
+self.time_step:0
+here1
+here1
+here1
+here1
+here1

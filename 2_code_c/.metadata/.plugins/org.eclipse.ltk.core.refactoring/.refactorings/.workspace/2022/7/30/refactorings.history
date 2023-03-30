@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 13 resources" deleteContents="false" description="Delete 13 resources" element1="/code_c/darwinian_rbm_rap.cpp" element10="/code_c/HetNet_toc_Sim.h" element11="/code_c/HetNet_toc_UE.cpp" element12="/code_c/HetNet_toc_UE.h" element13="/code_c/HetNet_toc.cpp" element2="/code_c/darwinian_rbm_rap.h" element3="/code_c/HetNet_toc_BS.cpp" element4="/code_c/HetNet_toc_BS.h" element5="/code_c/HetNet_toc_func.cpp" element6="/code_c/HetNet_toc_func.h" element7="/code_c/HetNet_toc_Link.cpp" element8="/code_c/HetNet_toc_Link.h" element9="/code_c/HetNet_toc_Sim.cpp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="13" stamp="1658470850715"/>
+</session>

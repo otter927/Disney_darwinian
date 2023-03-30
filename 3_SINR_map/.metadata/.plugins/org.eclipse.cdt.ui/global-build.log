@@ -1,0 +1,2097 @@
+13:17:54 **** Build of configuration Debug for project code_c ****
+make all 
+Building file: ../HetNet_toc.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc.d" -MT"HetNet_toc.o" -o "HetNet_toc.o" "../HetNet_toc.cpp"
+../HetNet_toc.cpp: In function ‘int main()’:
+../HetNet_toc.cpp:42:9: warning: unused variable ‘bs2’ [-Wunused-variable]
+   42 |     BS *bs2 = &bs2_r;
+      |         ^~~
+../HetNet_toc.cpp:51:11: warning: unused variable ‘link1’ [-Wunused-variable]
+   51 |     Link *link1 = &link1_r;
+      |           ^~~~~
+Finished building: ../HetNet_toc.cpp
+ 
+Building file: ../HetNet_toc_BS.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_BS.d" -MT"HetNet_toc_BS.o" -o "HetNet_toc_BS.o" "../HetNet_toc_BS.cpp"
+../HetNet_toc_BS.cpp: In member function ‘double* BS::get_xyz()’:
+../HetNet_toc_BS.cpp:56:16: warning: address of local variable ‘position’ returned [-Wreturn-local-addr]
+   56 |         return position;
+      |                ^~~~~~~~
+../HetNet_toc_BS.cpp:51:16: note: declared here
+   51 |         double position[3];
+      |                ^~~~~~~~
+../HetNet_toc_BS.cpp: In member function ‘bool BS::set_connecting_UE_ul(UE*)’:
+../HetNet_toc_BS.cpp:178:37: warning: comparison of integer expressions of different signedness: ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  178 |         if (connecting_UE_ul.size() >= max_antenna_ul){
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+../HetNet_toc_BS.cpp: In member function ‘bool BS::set_connecting_UE_dl(UE*)’:
+../HetNet_toc_BS.cpp:198:37: warning: comparison of integer expressions of different signedness: ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  198 |         if (connecting_UE_dl.size() >= max_antenna_dl){
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+../HetNet_toc_BS.cpp: In member function ‘void BS::set_c_connecting_UE()’:
+../HetNet_toc_BS.cpp:223:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  223 |         for (int i=0; i<connecting_UE_ul.size(); i++){
+      |                       ~^~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_BS.cpp:226:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  226 |         for (int i=0; i<connecting_UE_dl.size(); i++){
+      |                       ~^~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../HetNet_toc_BS.cpp
+ 
+Building file: ../HetNet_toc_Link.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_Link.d" -MT"HetNet_toc_Link.o" -o "HetNet_toc_Link.o" "../HetNet_toc_Link.cpp"
+Finished building: ../HetNet_toc_Link.cpp
+ 
+Building file: ../HetNet_toc_Sim.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_Sim.d" -MT"HetNet_toc_Sim.o" -o "HetNet_toc_Sim.o" "../HetNet_toc_Sim.cpp"
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::shadowing(BS*, UE*, int)’:
+../HetNet_toc_Sim.cpp:61:13: warning: unused variable ‘shadowing_MBS_MBS’ [-Wunused-variable]
+   61 |         int shadowing_MBS_MBS = 8; //#dB
+      |             ^~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:64:13: warning: unused variable ‘shadowing_UE_UE’ [-Wunused-variable]
+   64 |         int shadowing_UE_UE = 12;
+      |             ^~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:65:13: warning: unused variable ‘shadowing_MBS_SBS’ [-Wunused-variable]
+   65 |         int shadowing_MBS_SBS = 6;
+      |             ^~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:66:13: warning: unused variable ‘shadowing_SBS_SBS’ [-Wunused-variable]
+   66 |         int shadowing_SBS_SBS = 6;
+      |             ^~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::capacity_calculation()’:
+../HetNet_toc_Sim.cpp:169:17: warning: left operand of comma operator has no effect [-Wunused-value]
+  169 |                 sinr_upper, sinr_upper_db = signal((*i).get_bs(), (*i).get_ue(), (*i).get_direction());
+      |                 ^~~~~~~~~~
+../HetNet_toc_Sim.cpp:197:25: warning: left operand of comma operator has no effect [-Wunused-value]
+  197 |                         interf_tmp, interf_tmp_db = signal((*i).get_bs(), (*i).get_ue(), (*i).get_direction());
+      |                         ^~~~~~~~~~
+../HetNet_toc_Sim.cpp:155:13: warning: unused variable ‘i’ [-Wunused-variable]
+  155 |         int i;
+      |             ^
+../HetNet_toc_Sim.cpp:162:51: warning: variable ‘sinr_db’ set but not used [-Wunused-but-set-variable]
+  162 |         double sinr_bottom, sinr_bottom_db, sinr, sinr_db;
+      |                                                   ^~~~~~~
+../HetNet_toc_Sim.cpp:253:5: warning: no return statement in function returning non-void [-Wreturn-type]
+  253 |     }
+      |     ^
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::execute_sim_darwinian(double (*)[100])’:
+../HetNet_toc_Sim.cpp:563:5: warning: no return statement in function returning non-void [-Wreturn-type]
+  563 |     }
+      |     ^
+../HetNet_toc_Sim.cpp: In member function ‘void Simulator::move_file(double (*)[100])’:
+../HetNet_toc_Sim.cpp:673:38: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  673 |             if ((i % 2 == 0) && (i/2 < UE_list.size())){
+      |                                  ~~~~^~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::shadowing(BS*, UE*, int)’:
+../HetNet_toc_Sim.cpp:74:5: warning: control reaches end of non-void function [-Wreturn-type]
+   74 |     }
+      |     ^
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::capacity_calculation()’:
+../HetNet_toc_Sim.cpp:199:32: warning: ‘interf_tmp’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  199 |                         interf += interf_tmp;
+      |                         ~~~~~~~^~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:228:22: warning: ‘sinr_upper’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  228 |                 sinr = sinr_upper / sinr_bottom;
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:238:26: warning: ‘bandwidth’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  238 |                 capacity = bandwidth * log2(1 + sinr); //!!!!!!!!!!!!!!!log2 kokodake
+      |                 ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::execute_sim_darwinian(double (*)[100])’:
+../HetNet_toc_Sim.cpp:271:16: warning: ‘time_step’ is used uninitialized in this function [-Wuninitialized]
+  271 |         printf ("self.time_step: %d", time_step);
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../HetNet_toc_Sim.cpp
+ 
+Building file: ../HetNet_toc_UE.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_UE.d" -MT"HetNet_toc_UE.o" -o "HetNet_toc_UE.o" "../HetNet_toc_UE.cpp"
+../HetNet_toc_UE.cpp: In member function ‘double* UE::get_xyz()’:
+../HetNet_toc_UE.cpp:53:16: warning: address of local variable ‘position’ returned [-Wreturn-local-addr]
+   53 |         return position;
+      |                ^~~~~~~~
+../HetNet_toc_UE.cpp:48:16: note: declared here
+   48 |         double position[3];
+      |                ^~~~~~~~
+../HetNet_toc_UE.cpp: In member function ‘double UE::get_TX_power()’:
+../HetNet_toc_UE.cpp:60:27: warning: variable ‘power’ set but not used [-Wunused-but-set-variable]
+   60 |         double tmp_power, power;
+      |                           ^~~~~
+../HetNet_toc_UE.cpp:71:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   71 |     }
+      |     ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::append_interf_dl(double)’:
+../HetNet_toc_UE.cpp:83:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   83 |     }
+      |     ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::cp_data_list()’:
+../HetNet_toc_UE.cpp:87:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   87 |     }
+      |     ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::send(int)’:
+../HetNet_toc_UE.cpp:209:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  209 | }
+      | ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::send_test(int)’:
+../HetNet_toc_UE.cpp:259:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  259 | }
+      | ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::recieve(int)’:
+../HetNet_toc_UE.cpp:318:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  318 | }
+      | ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::recieve_test(int)’:
+../HetNet_toc_UE.cpp:368:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  368 | }
+      | ^
+../HetNet_toc_UE.cpp: In member function ‘BS* UE::find_BS(BS*)’:
+../HetNet_toc_UE.cpp:455:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<BS*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  455 |             for (int i=0; i<mbs_min_list.size(); i++){
+      |                           ~^~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_UE.cpp: In member function ‘Link* UE::gen_link(BS*, UE*, int)’:
+../HetNet_toc_UE.cpp:507:20: warning: address of local variable ‘new_link’ returned [-Wreturn-local-addr]
+  507 |             return(&new_link);
+      |                   ~^~~~~~~~~~
+../HetNet_toc_UE.cpp:502:18: note: declared here
+  502 |             Link new_link = Link(sim, lbs, lue, direction);
+      |                  ^~~~~~~~
+Finished building: ../HetNet_toc_UE.cpp
+ 
+Building file: ../HetNet_toc_func.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_func.d" -MT"HetNet_toc_func.o" -o "HetNet_toc_func.o" "../HetNet_toc_func.cpp"
+Finished building: ../HetNet_toc_func.cpp
+ 
+Building file: ../darwinian_rbm_rap.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"darwinian_rbm_rap.d" -MT"darwinian_rbm_rap.o" -o "darwinian_rbm_rap.o" "../darwinian_rbm_rap.cpp"
+../darwinian_rbm_rap.cpp:19:10: fatal error: randomGenerator.c: No such file or directory
+   19 | #include "randomGenerator.c" // own RNG library (same as András's, with minor bugfix and extra functionality)
+      |          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [subdir.mk:38: darwinian_rbm_rap.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:19:24 **** Incremental Build of configuration Debug for project code_c ****
+make all 
+Building file: ../HetNet_toc.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc.d" -MT"HetNet_toc.o" -o "HetNet_toc.o" "../HetNet_toc.cpp"
+../HetNet_toc.cpp: In function ‘int main()’:
+../HetNet_toc.cpp:42:9: warning: unused variable ‘bs2’ [-Wunused-variable]
+   42 |     BS *bs2 = &bs2_r;
+      |         ^~~
+../HetNet_toc.cpp:51:11: warning: unused variable ‘link1’ [-Wunused-variable]
+   51 |     Link *link1 = &link1_r;
+      |           ^~~~~
+Finished building: ../HetNet_toc.cpp
+ 
+Building file: ../HetNet_toc_BS.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_BS.d" -MT"HetNet_toc_BS.o" -o "HetNet_toc_BS.o" "../HetNet_toc_BS.cpp"
+../HetNet_toc_BS.cpp: In member function ‘double* BS::get_xyz()’:
+../HetNet_toc_BS.cpp:56:16: warning: address of local variable ‘position’ returned [-Wreturn-local-addr]
+   56 |         return position;
+      |                ^~~~~~~~
+../HetNet_toc_BS.cpp:51:16: note: declared here
+   51 |         double position[3];
+      |                ^~~~~~~~
+../HetNet_toc_BS.cpp: In member function ‘bool BS::set_connecting_UE_ul(UE*)’:
+../HetNet_toc_BS.cpp:178:37: warning: comparison of integer expressions of different signedness: ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  178 |         if (connecting_UE_ul.size() >= max_antenna_ul){
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+../HetNet_toc_BS.cpp: In member function ‘bool BS::set_connecting_UE_dl(UE*)’:
+../HetNet_toc_BS.cpp:198:37: warning: comparison of integer expressions of different signedness: ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  198 |         if (connecting_UE_dl.size() >= max_antenna_dl){
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+../HetNet_toc_BS.cpp: In member function ‘void BS::set_c_connecting_UE()’:
+../HetNet_toc_BS.cpp:223:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  223 |         for (int i=0; i<connecting_UE_ul.size(); i++){
+      |                       ~^~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_BS.cpp:226:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  226 |         for (int i=0; i<connecting_UE_dl.size(); i++){
+      |                       ~^~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../HetNet_toc_BS.cpp
+ 
+Building file: ../HetNet_toc_Link.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_Link.d" -MT"HetNet_toc_Link.o" -o "HetNet_toc_Link.o" "../HetNet_toc_Link.cpp"
+Finished building: ../HetNet_toc_Link.cpp
+ 
+Building file: ../HetNet_toc_Sim.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_Sim.d" -MT"HetNet_toc_Sim.o" -o "HetNet_toc_Sim.o" "../HetNet_toc_Sim.cpp"
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::shadowing(BS*, UE*, int)’:
+../HetNet_toc_Sim.cpp:61:13: warning: unused variable ‘shadowing_MBS_MBS’ [-Wunused-variable]
+   61 |         int shadowing_MBS_MBS = 8; //#dB
+      |             ^~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:64:13: warning: unused variable ‘shadowing_UE_UE’ [-Wunused-variable]
+   64 |         int shadowing_UE_UE = 12;
+      |             ^~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:65:13: warning: unused variable ‘shadowing_MBS_SBS’ [-Wunused-variable]
+   65 |         int shadowing_MBS_SBS = 6;
+      |             ^~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:66:13: warning: unused variable ‘shadowing_SBS_SBS’ [-Wunused-variable]
+   66 |         int shadowing_SBS_SBS = 6;
+      |             ^~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::capacity_calculation()’:
+../HetNet_toc_Sim.cpp:169:17: warning: left operand of comma operator has no effect [-Wunused-value]
+  169 |                 sinr_upper, sinr_upper_db = signal((*i).get_bs(), (*i).get_ue(), (*i).get_direction());
+      |                 ^~~~~~~~~~
+../HetNet_toc_Sim.cpp:197:25: warning: left operand of comma operator has no effect [-Wunused-value]
+  197 |                         interf_tmp, interf_tmp_db = signal((*i).get_bs(), (*i).get_ue(), (*i).get_direction());
+      |                         ^~~~~~~~~~
+../HetNet_toc_Sim.cpp:155:13: warning: unused variable ‘i’ [-Wunused-variable]
+  155 |         int i;
+      |             ^
+../HetNet_toc_Sim.cpp:162:51: warning: variable ‘sinr_db’ set but not used [-Wunused-but-set-variable]
+  162 |         double sinr_bottom, sinr_bottom_db, sinr, sinr_db;
+      |                                                   ^~~~~~~
+../HetNet_toc_Sim.cpp:253:5: warning: no return statement in function returning non-void [-Wreturn-type]
+  253 |     }
+      |     ^
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::execute_sim_darwinian(double (*)[100])’:
+../HetNet_toc_Sim.cpp:563:5: warning: no return statement in function returning non-void [-Wreturn-type]
+  563 |     }
+      |     ^
+../HetNet_toc_Sim.cpp: In member function ‘void Simulator::move_file(double (*)[100])’:
+../HetNet_toc_Sim.cpp:673:38: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  673 |             if ((i % 2 == 0) && (i/2 < UE_list.size())){
+      |                                  ~~~~^~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::shadowing(BS*, UE*, int)’:
+../HetNet_toc_Sim.cpp:74:5: warning: control reaches end of non-void function [-Wreturn-type]
+   74 |     }
+      |     ^
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::capacity_calculation()’:
+../HetNet_toc_Sim.cpp:199:32: warning: ‘interf_tmp’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  199 |                         interf += interf_tmp;
+      |                         ~~~~~~~^~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:228:22: warning: ‘sinr_upper’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  228 |                 sinr = sinr_upper / sinr_bottom;
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:238:26: warning: ‘bandwidth’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  238 |                 capacity = bandwidth * log2(1 + sinr); //!!!!!!!!!!!!!!!log2 kokodake
+      |                 ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::execute_sim_darwinian(double (*)[100])’:
+../HetNet_toc_Sim.cpp:271:16: warning: ‘time_step’ is used uninitialized in this function [-Wuninitialized]
+  271 |         printf ("self.time_step: %d", time_step);
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../HetNet_toc_Sim.cpp
+ 
+Building file: ../HetNet_toc_UE.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_UE.d" -MT"HetNet_toc_UE.o" -o "HetNet_toc_UE.o" "../HetNet_toc_UE.cpp"
+../HetNet_toc_UE.cpp: In member function ‘double* UE::get_xyz()’:
+../HetNet_toc_UE.cpp:53:16: warning: address of local variable ‘position’ returned [-Wreturn-local-addr]
+   53 |         return position;
+      |                ^~~~~~~~
+../HetNet_toc_UE.cpp:48:16: note: declared here
+   48 |         double position[3];
+      |                ^~~~~~~~
+../HetNet_toc_UE.cpp: In member function ‘double UE::get_TX_power()’:
+../HetNet_toc_UE.cpp:60:27: warning: variable ‘power’ set but not used [-Wunused-but-set-variable]
+   60 |         double tmp_power, power;
+      |                           ^~~~~
+../HetNet_toc_UE.cpp:71:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   71 |     }
+      |     ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::append_interf_dl(double)’:
+../HetNet_toc_UE.cpp:83:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   83 |     }
+      |     ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::cp_data_list()’:
+../HetNet_toc_UE.cpp:87:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   87 |     }
+      |     ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::send(int)’:
+../HetNet_toc_UE.cpp:209:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  209 | }
+      | ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::send_test(int)’:
+../HetNet_toc_UE.cpp:259:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  259 | }
+      | ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::recieve(int)’:
+../HetNet_toc_UE.cpp:318:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  318 | }
+      | ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::recieve_test(int)’:
+../HetNet_toc_UE.cpp:368:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  368 | }
+      | ^
+../HetNet_toc_UE.cpp: In member function ‘BS* UE::find_BS(BS*)’:
+../HetNet_toc_UE.cpp:455:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<BS*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  455 |             for (int i=0; i<mbs_min_list.size(); i++){
+      |                           ~^~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_UE.cpp: In member function ‘Link* UE::gen_link(BS*, UE*, int)’:
+../HetNet_toc_UE.cpp:507:20: warning: address of local variable ‘new_link’ returned [-Wreturn-local-addr]
+  507 |             return(&new_link);
+      |                   ~^~~~~~~~~~
+../HetNet_toc_UE.cpp:502:18: note: declared here
+  502 |             Link new_link = Link(sim, lbs, lue, direction);
+      |                  ^~~~~~~~
+Finished building: ../HetNet_toc_UE.cpp
+ 
+Building file: ../HetNet_toc_func.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_func.d" -MT"HetNet_toc_func.o" -o "HetNet_toc_func.o" "../HetNet_toc_func.cpp"
+Finished building: ../HetNet_toc_func.cpp
+ 
+Building file: ../darwinian_rbm_rap.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"darwinian_rbm_rap.d" -MT"darwinian_rbm_rap.o" -o "darwinian_rbm_rap.o" "../darwinian_rbm_rap.cpp"
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::train_rbm(float*, int, int)’:
+../darwinian_rbm_rap.cpp:93:9: warning: unused variable ‘i’ [-Wunused-variable]
+   93 |     int i, j, k;
+      |         ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::continuousPattern(float*, int, int)’:
+../darwinian_rbm_rap.cpp:447:9: warning: unused variable ‘t’ [-Wunused-variable]
+  447 |  int i, t;
+      |         ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::trainNetworksRandom(int)’:
+../darwinian_rbm_rap.cpp:521:15: warning: unused variable ‘k’ [-Wunused-variable]
+  521 |  int d, i, j, k, l;
+      |               ^
+../darwinian_rbm_rap.cpp:521:18: warning: unused variable ‘l’ [-Wunused-variable]
+  521 |  int d, i, j, k, l;
+      |                  ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::setLandscape(int, int)’:
+../darwinian_rbm_rap.cpp:673:6: warning: unused variable ‘i’ [-Wunused-variable]
+  673 |  int i, j;
+      |      ^
+../darwinian_rbm_rap.cpp:673:9: warning: unused variable ‘j’ [-Wunused-variable]
+  673 |  int i, j;
+      |         ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::setNeighborDemes(int, int)’:
+../darwinian_rbm_rap.cpp:701:4: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  701 |    if(j > 0)   matrixNeighbors[p][c++] = pos[i-1][j-1];
+      |    ^~
+../darwinian_rbm_rap.cpp:702:16: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  702 |                matrixNeighbors[p][c++] = pos[i-1][j];
+      |                ^~~~~~~~~~~~~~~
+../darwinian_rbm_rap.cpp:708:4: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  708 |    if(j > 0)   matrixNeighbors[p][c++] = pos[i+1][j-1];
+      |    ^~
+../darwinian_rbm_rap.cpp:709:16: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  709 |                matrixNeighbors[p][c++] = pos[i+1][j];
+      |                ^~~~~~~~~~~~~~~
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::evolution_initialization(int)’:
+../darwinian_rbm_rap.cpp:718:19: warning: unused variable ‘k’ [-Wunused-variable]
+  718 |         int i, j, k, d, e = 0;
+      |                   ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::evolution_gen_environment(int)’:
+../darwinian_rbm_rap.cpp:765:21: warning: unused variable ‘j’ [-Wunused-variable]
+  765 |              int i, j, k, d, e = 0;
+      |                     ^
+../darwinian_rbm_rap.cpp:765:24: warning: unused variable ‘k’ [-Wunused-variable]
+  765 |              int i, j, k, d, e = 0;
+      |                        ^
+../darwinian_rbm_rap.cpp:765:30: warning: unused variable ‘e’ [-Wunused-variable]
+  765 |              int i, j, k, d, e = 0;
+      |                              ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::test_versatility(int)’:
+../darwinian_rbm_rap.cpp:822:30: warning: unused variable ‘e’ [-Wunused-variable]
+  822 |              int i, j, k, d, e = 0;
+      |                              ^
+../darwinian_rbm_rap.cpp: In member function ‘DEME* Darwinian_deme::evolution_gen_update(int)’:
+../darwinian_rbm_rap.cpp:869:24: warning: unused variable ‘k’ [-Wunused-variable]
+  869 |              int i, j, k, d, e = 0;
+      |                        ^
+../darwinian_rbm_rap.cpp:869:30: warning: unused variable ‘e’ [-Wunused-variable]
+  869 |              int i, j, k, d, e = 0;
+      |                              ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::evolution_gen_calcfitness(int)’:
+../darwinian_rbm_rap.cpp:932:24: warning: unused variable ‘k’ [-Wunused-variable]
+  932 |              int i, j, k, d, e = 0;
+      |                        ^
+../darwinian_rbm_rap.cpp:932:30: warning: unused variable ‘e’ [-Wunused-variable]
+  932 |              int i, j, k, d, e = 0;
+      |                              ^
+../darwinian_rbm_rap.cpp: In member function ‘float* Darwinian_deme::evolution_gen_calcbestfitness(int)’:
+../darwinian_rbm_rap.cpp:1028:52: warning: format ‘%f’ expects a matching ‘double’ argument [-Wformat=]
+ 1028 |    printf("darwinian: %d\t%f\t%f\t%f\t%d\t%d\t%f\t%f\t", t, bestW, avgW/(float)DN, worstW, deme[bestD].storedQ[bestP], deme[bestD].storedP[bestP], deme[bestD].storedD[bestP]);
+      |                                                   ~^
+      |                                                    |
+      |                                                    double
+../darwinian_rbm_rap.cpp:990:21: warning: unused variable ‘j’ [-Wunused-variable]
+  990 |              int i, j, k, d, e = 0;
+      |                     ^
+../darwinian_rbm_rap.cpp:990:24: warning: unused variable ‘k’ [-Wunused-variable]
+  990 |              int i, j, k, d, e = 0;
+      |                        ^
+../darwinian_rbm_rap.cpp:990:30: warning: unused variable ‘e’ [-Wunused-variable]
+  990 |              int i, j, k, d, e = 0;
+      |                              ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::evolution_gen_calcmutation(int)’:
+../darwinian_rbm_rap.cpp:1045:22: warning: unused variable ‘i’ [-Wunused-variable]
+ 1045 |                  int i, j, k, d, e = 0;
+      |                      ^
+../darwinian_rbm_rap.cpp:1045:25: warning: unused variable ‘j’ [-Wunused-variable]
+ 1045 |                  int i, j, k, d, e = 0;
+      |                         ^
+../darwinian_rbm_rap.cpp:1045:28: warning: unused variable ‘k’ [-Wunused-variable]
+ 1045 |                  int i, j, k, d, e = 0;
+      |                            ^
+../darwinian_rbm_rap.cpp:1045:34: warning: unused variable ‘e’ [-Wunused-variable]
+ 1045 |                  int i, j, k, d, e = 0;
+      |                                  ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::evolution_gen_replacemutation(int)’:
+../darwinian_rbm_rap.cpp:1065:25: warning: unused variable ‘j’ [-Wunused-variable]
+ 1065 |                  int i, j, k, d, e = 0;
+      |                         ^
+../darwinian_rbm_rap.cpp:1065:34: warning: unused variable ‘e’ [-Wunused-variable]
+ 1065 |                  int i, j, k, d, e = 0;
+      |                                  ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::evolution_gen_learnbest(int)’:
+../darwinian_rbm_rap.cpp:1101:25: warning: unused variable ‘j’ [-Wunused-variable]
+ 1101 |                  int i, j, k, d, e = 0;
+      |                         ^
+../darwinian_rbm_rap.cpp:1101:34: warning: unused variable ‘e’ [-Wunused-variable]
+ 1101 |                  int i, j, k, d, e = 0;
+      |                                  ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::evolution_gen_learnworst(int)’:
+../darwinian_rbm_rap.cpp:1135:25: warning: unused variable ‘j’ [-Wunused-variable]
+ 1135 |                  int i, j, k, d, e = 0;
+      |                         ^
+../darwinian_rbm_rap.cpp:1135:34: warning: unused variable ‘e’ [-Wunused-variable]
+ 1135 |                  int i, j, k, d, e = 0;
+      |                                  ^
+../darwinian_rbm_rap.cpp: In member function ‘DEME* Darwinian_deme::evolution_gen_selection(int)’:
+../darwinian_rbm_rap.cpp:1169:22: warning: unused variable ‘i’ [-Wunused-variable]
+ 1169 |                  int i, j, k, d, e = 0;
+      |                      ^
+../darwinian_rbm_rap.cpp:1169:25: warning: unused variable ‘j’ [-Wunused-variable]
+ 1169 |                  int i, j, k, d, e = 0;
+      |                         ^
+../darwinian_rbm_rap.cpp:1169:28: warning: unused variable ‘k’ [-Wunused-variable]
+ 1169 |                  int i, j, k, d, e = 0;
+      |                            ^
+../darwinian_rbm_rap.cpp:1169:34: warning: unused variable ‘e’ [-Wunused-variable]
+ 1169 |                  int i, j, k, d, e = 0;
+      |                                  ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::evolution()’:
+../darwinian_rbm_rap.cpp:1234:13: warning: unused variable ‘i’ [-Wunused-variable]
+ 1234 |         int i, j, k, d, e = 0;
+      |             ^
+../darwinian_rbm_rap.cpp:1234:16: warning: unused variable ‘j’ [-Wunused-variable]
+ 1234 |         int i, j, k, d, e = 0;
+      |                ^
+../darwinian_rbm_rap.cpp:1234:19: warning: unused variable ‘k’ [-Wunused-variable]
+ 1234 |         int i, j, k, d, e = 0;
+      |                   ^
+../darwinian_rbm_rap.cpp:1234:25: warning: unused variable ‘e’ [-Wunused-variable]
+ 1234 |         int i, j, k, d, e = 0;
+      |                         ^
+Finished building: ../darwinian_rbm_rap.cpp
+ 
+Building file: ../randomGenerator.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"randomGenerator.d" -MT"randomGenerator.o" -o "randomGenerator.o" "../randomGenerator.c"
+Finished building: ../randomGenerator.c
+ 
+Building target: code_c
+Invoking: GCC C++ Linker
+g++  -o "code_c"  ./HetNet_toc.o ./HetNet_toc_BS.o ./HetNet_toc_Link.o ./HetNet_toc_Sim.o ./HetNet_toc_UE.o ./HetNet_toc_func.o ./darwinian_rbm_rap.o ./randomGenerator.o   
+Finished building target: code_c
+ 
+13:24:18 **** Incremental Build of configuration Debug for project code_c ****
+make all 
+make: Nothing to be done for 'all'.
+13:26:44 **** Incremental Build of configuration Debug for project code_c ****
+make all 
+make: Nothing to be done for 'all'.
+13:28:04 **** Incremental Build of configuration Debug for project code_c ****
+make all 
+make: Nothing to be done for 'all'.
+13:31:44 **** Incremental Build of configuration Debug for project code_c ****
+make all 
+make: Nothing to be done for 'all'.
+14:50:09 **** Incremental Build of configuration Debug for project code_c ****
+make all 
+Building file: ../HetNet_toc.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc.d" -MT"HetNet_toc.o" -o "HetNet_toc.o" "../HetNet_toc.cpp"
+../HetNet_toc.cpp: In function ‘int main()’:
+../HetNet_toc.cpp:36:9: warning: unused variable ‘bs1’ [-Wunused-variable]
+   36 |     BS *bs1 = &bs1_r;
+      |         ^~~
+../HetNet_toc.cpp:39:9: warning: unused variable ‘bs2’ [-Wunused-variable]
+   39 |     BS *bs2 = &bs2_r;
+      |         ^~~
+Finished building: ../HetNet_toc.cpp
+ 
+Building target: code_c
+Invoking: GCC C++ Linker
+g++  -o "code_c"  ./HetNet_toc.o ./HetNet_toc_BS.o ./HetNet_toc_Link.o ./HetNet_toc_Sim.o ./HetNet_toc_UE.o ./HetNet_toc_func.o ./darwinian_rbm_rap.o ./randomGenerator.o   
+Finished building target: code_c
+ 
+14:50:24 **** Incremental Build of configuration Debug for project code_c ****
+make all 
+make: Nothing to be done for 'all'.
+14:50:44 **** Incremental Build of configuration Debug for project code_c ****
+make all 
+Building file: ../HetNet_toc.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc.d" -MT"HetNet_toc.o" -o "HetNet_toc.o" "../HetNet_toc.cpp"
+../HetNet_toc.cpp: In function ‘int main()’:
+../HetNet_toc.cpp:36:9: warning: unused variable ‘bs1’ [-Wunused-variable]
+   36 |     BS *bs1 = &bs1_r;
+      |         ^~~
+../HetNet_toc.cpp:39:9: warning: unused variable ‘bs2’ [-Wunused-variable]
+   39 |     BS *bs2 = &bs2_r;
+      |         ^~~
+Finished building: ../HetNet_toc.cpp
+ 
+Building target: code_c
+Invoking: GCC C++ Linker
+g++  -o "code_c"  ./HetNet_toc.o ./HetNet_toc_BS.o ./HetNet_toc_Link.o ./HetNet_toc_Sim.o ./HetNet_toc_UE.o ./HetNet_toc_func.o ./darwinian_rbm_rap.o ./randomGenerator.o   
+Finished building target: code_c
+ 
+14:50:58 **** Incremental Build of configuration Debug for project code_c ****
+make all 
+make: Nothing to be done for 'all'.
+14:51:18 **** Incremental Build of configuration Debug for project code_c ****
+make all 
+make: Nothing to be done for 'all'.
+14:52:01 **** Incremental Build of configuration Debug for project code_c ****
+make all 
+make: Nothing to be done for 'all'.
+14:53:32 **** Incremental Build of configuration Debug for project code_c ****
+make all 
+Building file: ../HetNet_toc.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc.d" -MT"HetNet_toc.o" -o "HetNet_toc.o" "../HetNet_toc.cpp"
+../HetNet_toc.cpp: In function ‘int main()’:
+../HetNet_toc.cpp:36:9: warning: unused variable ‘bs1’ [-Wunused-variable]
+   36 |     BS *bs1 = &bs1_r;
+      |         ^~~
+../HetNet_toc.cpp:39:9: warning: unused variable ‘bs2’ [-Wunused-variable]
+   39 |     BS *bs2 = &bs2_r;
+      |         ^~~
+Finished building: ../HetNet_toc.cpp
+ 
+Building target: code_c
+Invoking: GCC C++ Linker
+g++  -o "code_c"  ./HetNet_toc.o ./HetNet_toc_BS.o ./HetNet_toc_Link.o ./HetNet_toc_Sim.o ./HetNet_toc_UE.o ./HetNet_toc_func.o ./darwinian_rbm_rap.o ./randomGenerator.o   
+Finished building target: code_c
+ 
+14:55:38 **** Incremental Build of configuration Debug for project code_c ****
+make all 
+Building file: ../HetNet_toc.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc.d" -MT"HetNet_toc.o" -o "HetNet_toc.o" "../HetNet_toc.cpp"
+../HetNet_toc.cpp: In function ‘int main()’:
+../HetNet_toc.cpp:36:9: warning: unused variable ‘bs1’ [-Wunused-variable]
+   36 |     BS *bs1 = &bs1_r;
+      |         ^~~
+../HetNet_toc.cpp:39:9: warning: unused variable ‘bs2’ [-Wunused-variable]
+   39 |     BS *bs2 = &bs2_r;
+      |         ^~~
+Finished building: ../HetNet_toc.cpp
+ 
+Building target: code_c
+Invoking: GCC C++ Linker
+g++  -o "code_c"  ./HetNet_toc.o ./HetNet_toc_BS.o ./HetNet_toc_Link.o ./HetNet_toc_Sim.o ./HetNet_toc_UE.o ./HetNet_toc_func.o ./darwinian_rbm_rap.o ./randomGenerator.o   
+Finished building target: code_c
+ 
+14:56:00 **** Incremental Build of configuration Debug for project code_c ****
+make all 
+make: Nothing to be done for 'all'.
+14:57:55 **** Incremental Build of configuration Debug for project code_c ****
+make all 
+make: Nothing to be done for 'all'.
+14:59:17 **** Incremental Build of configuration Debug for project code_c ****
+make all 
+make: Nothing to be done for 'all'.
+15:05:20 **** Incremental Build of configuration Debug for project code_c ****
+make all 
+make: Nothing to be done for 'all'.
+15:09:00 **** Incremental Build of configuration Debug for project code_c ****
+make all 
+Building file: ../HetNet_toc.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc.d" -MT"HetNet_toc.o" -o "HetNet_toc.o" "../HetNet_toc.cpp"
+../HetNet_toc.cpp: In function ‘int main()’:
+../HetNet_toc.cpp:36:9: warning: unused variable ‘bs1’ [-Wunused-variable]
+   36 |     BS *bs1 = &bs1_r;
+      |         ^~~
+../HetNet_toc.cpp:39:9: warning: unused variable ‘bs2’ [-Wunused-variable]
+   39 |     BS *bs2 = &bs2_r;
+      |         ^~~
+Finished building: ../HetNet_toc.cpp
+ 
+Building target: code_c
+Invoking: GCC C++ Linker
+g++  -o "code_c"  ./HetNet_toc.o ./HetNet_toc_BS.o ./HetNet_toc_Link.o ./HetNet_toc_Sim.o ./HetNet_toc_UE.o ./HetNet_toc_func.o ./darwinian_rbm_rap.o ./randomGenerator.o   
+Finished building target: code_c
+ 
+15:16:25 **** Incremental Build of configuration Debug for project code_c ****
+make all 
+make: Nothing to be done for 'all'.
+15:18:11 **** Incremental Build of configuration Debug for project code_c ****
+make all 
+Building file: ../HetNet_toc.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc.d" -MT"HetNet_toc.o" -o "HetNet_toc.o" "../HetNet_toc.cpp"
+../HetNet_toc.cpp: In function ‘int main()’:
+../HetNet_toc.cpp:36:9: warning: unused variable ‘bs1’ [-Wunused-variable]
+   36 |     BS *bs1 = &bs1_r;
+      |         ^~~
+../HetNet_toc.cpp:39:9: warning: unused variable ‘bs2’ [-Wunused-variable]
+   39 |     BS *bs2 = &bs2_r;
+      |         ^~~
+Finished building: ../HetNet_toc.cpp
+ 
+Building file: ../HetNet_toc_BS.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_BS.d" -MT"HetNet_toc_BS.o" -o "HetNet_toc_BS.o" "../HetNet_toc_BS.cpp"
+../HetNet_toc_BS.cpp: In member function ‘double* BS::get_xyz()’:
+../HetNet_toc_BS.cpp:56:16: warning: address of local variable ‘position’ returned [-Wreturn-local-addr]
+   56 |         return position;
+      |                ^~~~~~~~
+../HetNet_toc_BS.cpp:51:16: note: declared here
+   51 |         double position[3];
+      |                ^~~~~~~~
+../HetNet_toc_BS.cpp: In member function ‘bool BS::set_connecting_UE_ul(UE*)’:
+../HetNet_toc_BS.cpp:178:37: warning: comparison of integer expressions of different signedness: ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  178 |         if (connecting_UE_ul.size() >= max_antenna_ul){
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+../HetNet_toc_BS.cpp: In member function ‘bool BS::set_connecting_UE_dl(UE*)’:
+../HetNet_toc_BS.cpp:198:37: warning: comparison of integer expressions of different signedness: ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  198 |         if (connecting_UE_dl.size() >= max_antenna_dl){
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+../HetNet_toc_BS.cpp: In member function ‘void BS::set_c_connecting_UE()’:
+../HetNet_toc_BS.cpp:223:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  223 |         for (int i=0; i<connecting_UE_ul.size(); i++){
+      |                       ~^~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_BS.cpp:226:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  226 |         for (int i=0; i<connecting_UE_dl.size(); i++){
+      |                       ~^~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../HetNet_toc_BS.cpp
+ 
+Building file: ../HetNet_toc_Link.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_Link.d" -MT"HetNet_toc_Link.o" -o "HetNet_toc_Link.o" "../HetNet_toc_Link.cpp"
+Finished building: ../HetNet_toc_Link.cpp
+ 
+Building file: ../HetNet_toc_Sim.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_Sim.d" -MT"HetNet_toc_Sim.o" -o "HetNet_toc_Sim.o" "../HetNet_toc_Sim.cpp"
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::shadowing(BS*, UE*, int)’:
+../HetNet_toc_Sim.cpp:61:13: warning: unused variable ‘shadowing_MBS_MBS’ [-Wunused-variable]
+   61 |         int shadowing_MBS_MBS = 8; //#dB
+      |             ^~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:64:13: warning: unused variable ‘shadowing_UE_UE’ [-Wunused-variable]
+   64 |         int shadowing_UE_UE = 12;
+      |             ^~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:65:13: warning: unused variable ‘shadowing_MBS_SBS’ [-Wunused-variable]
+   65 |         int shadowing_MBS_SBS = 6;
+      |             ^~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:66:13: warning: unused variable ‘shadowing_SBS_SBS’ [-Wunused-variable]
+   66 |         int shadowing_SBS_SBS = 6;
+      |             ^~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::capacity_calculation()’:
+../HetNet_toc_Sim.cpp:169:17: warning: left operand of comma operator has no effect [-Wunused-value]
+  169 |                 sinr_upper, sinr_upper_db = signal((*i).get_bs(), (*i).get_ue(), (*i).get_direction());
+      |                 ^~~~~~~~~~
+../HetNet_toc_Sim.cpp:197:25: warning: left operand of comma operator has no effect [-Wunused-value]
+  197 |                         interf_tmp, interf_tmp_db = signal((*i).get_bs(), (*i).get_ue(), (*i).get_direction());
+      |                         ^~~~~~~~~~
+../HetNet_toc_Sim.cpp:155:13: warning: unused variable ‘i’ [-Wunused-variable]
+  155 |         int i;
+      |             ^
+../HetNet_toc_Sim.cpp:162:51: warning: variable ‘sinr_db’ set but not used [-Wunused-but-set-variable]
+  162 |         double sinr_bottom, sinr_bottom_db, sinr, sinr_db;
+      |                                                   ^~~~~~~
+../HetNet_toc_Sim.cpp:253:5: warning: no return statement in function returning non-void [-Wreturn-type]
+  253 |     }
+      |     ^
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::execute_sim_darwinian(double (*)[100])’:
+../HetNet_toc_Sim.cpp:563:5: warning: no return statement in function returning non-void [-Wreturn-type]
+  563 |     }
+      |     ^
+../HetNet_toc_Sim.cpp: In member function ‘void Simulator::move_file(double (*)[100])’:
+../HetNet_toc_Sim.cpp:673:38: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  673 |             if ((i % 2 == 0) && (i/2 < UE_list.size())){
+      |                                  ~~~~^~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::shadowing(BS*, UE*, int)’:
+../HetNet_toc_Sim.cpp:74:5: warning: control reaches end of non-void function [-Wreturn-type]
+   74 |     }
+      |     ^
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::capacity_calculation()’:
+../HetNet_toc_Sim.cpp:199:32: warning: ‘interf_tmp’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  199 |                         interf += interf_tmp;
+      |                         ~~~~~~~^~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:228:22: warning: ‘sinr_upper’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  228 |                 sinr = sinr_upper / sinr_bottom;
+      |                 ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:238:26: warning: ‘bandwidth’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  238 |                 capacity = bandwidth * log2(1 + sinr); //!!!!!!!!!!!!!!!log2 kokodake
+      |                 ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::execute_sim_darwinian(double (*)[100])’:
+../HetNet_toc_Sim.cpp:271:16: warning: ‘time_step’ is used uninitialized in this function [-Wuninitialized]
+  271 |         printf ("self.time_step: %d", time_step);
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../HetNet_toc_Sim.cpp
+ 
+Building file: ../HetNet_toc_UE.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_UE.d" -MT"HetNet_toc_UE.o" -o "HetNet_toc_UE.o" "../HetNet_toc_UE.cpp"
+../HetNet_toc_UE.cpp: In member function ‘double* UE::get_xyz()’:
+../HetNet_toc_UE.cpp:53:16: warning: address of local variable ‘position’ returned [-Wreturn-local-addr]
+   53 |         return position;
+      |                ^~~~~~~~
+../HetNet_toc_UE.cpp:48:16: note: declared here
+   48 |         double position[3];
+      |                ^~~~~~~~
+../HetNet_toc_UE.cpp: In member function ‘double UE::get_TX_power()’:
+../HetNet_toc_UE.cpp:60:27: warning: variable ‘power’ set but not used [-Wunused-but-set-variable]
+   60 |         double tmp_power, power;
+      |                           ^~~~~
+../HetNet_toc_UE.cpp:71:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   71 |     }
+      |     ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::append_interf_dl(double)’:
+../HetNet_toc_UE.cpp:83:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   83 |     }
+      |     ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::cp_data_list()’:
+../HetNet_toc_UE.cpp:87:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   87 |     }
+      |     ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::send(int)’:
+../HetNet_toc_UE.cpp:209:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  209 | }
+      | ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::send_test(int)’:
+../HetNet_toc_UE.cpp:259:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  259 | }
+      | ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::recieve(int)’:
+../HetNet_toc_UE.cpp:318:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  318 | }
+      | ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::recieve_test(int)’:
+../HetNet_toc_UE.cpp:368:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  368 | }
+      | ^
+../HetNet_toc_UE.cpp: In member function ‘BS* UE::find_BS(BS*)’:
+../HetNet_toc_UE.cpp:455:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<BS*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  455 |             for (int i=0; i<mbs_min_list.size(); i++){
+      |                           ~^~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_UE.cpp: In member function ‘Link* UE::gen_link(BS*, UE*, int)’:
+../HetNet_toc_UE.cpp:507:20: warning: address of local variable ‘new_link’ returned [-Wreturn-local-addr]
+  507 |             return(&new_link);
+      |                   ~^~~~~~~~~~
+../HetNet_toc_UE.cpp:502:18: note: declared here
+  502 |             Link new_link = Link(sim, lbs, lue, direction);
+      |                  ^~~~~~~~
+Finished building: ../HetNet_toc_UE.cpp
+ 
+Building file: ../HetNet_toc_func.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_func.d" -MT"HetNet_toc_func.o" -o "HetNet_toc_func.o" "../HetNet_toc_func.cpp"
+Finished building: ../HetNet_toc_func.cpp
+ 
+Building target: code_c
+Invoking: GCC C++ Linker
+g++  -o "code_c"  ./HetNet_toc.o ./HetNet_toc_BS.o ./HetNet_toc_Link.o ./HetNet_toc_Sim.o ./HetNet_toc_UE.o ./HetNet_toc_func.o ./darwinian_rbm_rap.o ./randomGenerator.o   
+Finished building target: code_c
+ 
+15:32:58 **** Incremental Build of configuration Debug for project code_c ****
+make all 
+make: Nothing to be done for 'all'.
+17:36:27 **** Build of configuration Debug for project code_c ****
+make all 
+Building file: ../HetNet_toc.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc.d" -MT"HetNet_toc.o" -o "HetNet_toc.o" "../HetNet_toc.cpp"
+../HetNet_toc.cpp: In function ‘int main()’:
+../HetNet_toc.cpp:164:36: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  164 |     printf("position_list.size(): %d\n", position_list.size());
+      |                                   ~^     ~~~~~~~~~~~~~~~~~~~~
+      |                                    |                       |
+      |                                    int                     std::vector<double>::size_type {aka long unsigned int}
+      |                                   %ld
+../HetNet_toc.cpp:168:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  168 |     for (int i=0; i< (position_list.size()/2 -1); i++){
+      |                   ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc.cpp:141:21: warning: variable ‘cell_id’ set but not used [-Wunused-but-set-variable]
+  141 |     int cell_color, cell_id, bs_id;
+      |                     ^~~~~~~
+Finished building: ../HetNet_toc.cpp
+ 
+Building file: ../HetNet_toc_BS.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_BS.d" -MT"HetNet_toc_BS.o" -o "HetNet_toc_BS.o" "../HetNet_toc_BS.cpp"
+../HetNet_toc_BS.cpp: In member function ‘bool BS::set_connecting_UE_ul(UE*)’:
+../HetNet_toc_BS.cpp:196:37: warning: comparison of integer expressions of different signedness: ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  196 |         if (connecting_UE_ul.size() >= max_antenna_ul){
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+../HetNet_toc_BS.cpp: In member function ‘bool BS::set_connecting_UE_dl(UE*)’:
+../HetNet_toc_BS.cpp:216:37: warning: comparison of integer expressions of different signedness: ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  216 |         if (connecting_UE_dl.size() >= max_antenna_dl){
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+../HetNet_toc_BS.cpp: In member function ‘void BS::set_c_connecting_UE()’:
+../HetNet_toc_BS.cpp:241:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  241 |         for (int i=0; i<connecting_UE_ul.size(); i++){
+      |                       ~^~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_BS.cpp:244:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  244 |         for (int i=0; i<connecting_UE_dl.size(); i++){
+      |                       ~^~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../HetNet_toc_BS.cpp
+ 
+Building file: ../HetNet_toc_Link.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_Link.d" -MT"HetNet_toc_Link.o" -o "HetNet_toc_Link.o" "../HetNet_toc_Link.cpp"
+Finished building: ../HetNet_toc_Link.cpp
+ 
+Building file: ../HetNet_toc_Sim.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_Sim.d" -MT"HetNet_toc_Sim.o" -o "HetNet_toc_Sim.o" "../HetNet_toc_Sim.cpp"
+../HetNet_toc_Sim.cpp: In constructor ‘Simulator::Simulator(std::vector<double>)’:
+../HetNet_toc_Sim.cpp:42:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   42 |         for (int i=0; i<(position_list.size()/2-1); i++){
+      |                       ~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::shadowing(BS*, UE*, int)’:
+../HetNet_toc_Sim.cpp:94:13: warning: unused variable ‘shadowing_MBS_MBS’ [-Wunused-variable]
+   94 |         int shadowing_MBS_MBS = 8; //#dB
+      |             ^~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:97:13: warning: unused variable ‘shadowing_UE_UE’ [-Wunused-variable]
+   97 |         int shadowing_UE_UE = 12;
+      |             ^~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:98:13: warning: unused variable ‘shadowing_MBS_SBS’ [-Wunused-variable]
+   98 |         int shadowing_MBS_SBS = 6;
+      |             ^~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:99:13: warning: unused variable ‘shadowing_SBS_SBS’ [-Wunused-variable]
+   99 |         int shadowing_SBS_SBS = 6;
+      |             ^~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::capacity_calculation()’:
+../HetNet_toc_Sim.cpp:261:36: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Link*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  261 |         printf("Link_list vector: %d\n", Link_list.size());
+      |                                   ~^     ~~~~~~~~~~~~~~~~
+      |                                    |                   |
+      |                                    int                 std::vector<Link*>::size_type {aka long unsigned int}
+      |                                   %ld
+../HetNet_toc_Sim.cpp:244:16: warning: unused variable ‘noise_floor’ [-Wunused-variable]
+  244 |         double noise_floor = -108;  //#dBm    #Presentation of Specification to TSG or WG - 3GPP
+      |                ^~~~~~~~~~~
+../HetNet_toc_Sim.cpp:245:13: warning: unused variable ‘i’ [-Wunused-variable]
+  245 |         int i;
+      |             ^
+../HetNet_toc_Sim.cpp:246:13: warning: unused variable ‘num_SINR’ [-Wunused-variable]
+  246 |         int num_SINR = 0;
+      |             ^~~~~~~~
+../HetNet_toc_Sim.cpp:247:28: warning: unused variable ‘interf_tmp’ [-Wunused-variable]
+  247 |         double sinr_upper, interf_tmp;
+      |                            ^~~~~~~~~~
+../HetNet_toc_Sim.cpp:249:16: warning: unused variable ‘interf’ [-Wunused-variable]
+  249 |         double interf;
+      |                ^~~~~~
+../HetNet_toc_Sim.cpp:253:16: warning: unused variable ‘noise_tmp’ [-Wunused-variable]
+  253 |         double noise_tmp;
+      |                ^~~~~~~~~
+../HetNet_toc_Sim.cpp:254:16: warning: unused variable ‘noise_tmp_db’ [-Wunused-variable]
+  254 |         double noise_tmp_db;
+      |                ^~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:255:16: warning: unused variable ‘sinr_bottom’ [-Wunused-variable]
+  255 |         double sinr_bottom, sinr;
+      |                ^~~~~~~~~~~
+../HetNet_toc_Sim.cpp:318:5: warning: no return statement in function returning non-void [-Wreturn-type]
+  318 |     }
+      |     ^
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::capacity_calculation2()’:
+../HetNet_toc_Sim.cpp:365:36: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Link*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  365 |         printf("Link_list vector: %d\n", Link_list.size());
+      |                                   ~^     ~~~~~~~~~~~~~~~~
+      |                                    |                   |
+      |                                    int                 std::vector<Link*>::size_type {aka long unsigned int}
+      |                                   %ld
+../HetNet_toc_Sim.cpp:349:13: warning: unused variable ‘i’ [-Wunused-variable]
+  349 |         int i;
+      |             ^
+../HetNet_toc_Sim.cpp:499:5: warning: no return statement in function returning non-void [-Wreturn-type]
+  499 |     }
+      |     ^
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::execute_sim_darwinian(std::vector<double>)’:
+../HetNet_toc_Sim.cpp:882:27: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  882 |         printf("UE_list: %d\n", UE_list.size());
+      |                          ~^     ~~~~~~~~~~~~~~
+      |                           |                 |
+      |                           int               std::vector<UE*>::size_type {aka long unsigned int}
+      |                          %ld
+../HetNet_toc_Sim.cpp:913:5: warning: no return statement in function returning non-void [-Wreturn-type]
+  913 |     }
+      |     ^
+../HetNet_toc_Sim.cpp: In member function ‘void Simulator::move_file(std::vector<double>)’:
+../HetNet_toc_Sim.cpp:1037:38: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+ 1037 |             if ((i % 2 == 0) && (i/2 < UE_list.size())){
+      |                                  ~~~~^~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:1035:13: warning: unused variable ‘ind’ [-Wunused-variable]
+ 1035 |         int ind = time_step / 10;
+      |             ^~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::shadowing(BS*, UE*, int)’:
+../HetNet_toc_Sim.cpp:119:5: warning: control reaches end of non-void function [-Wreturn-type]
+  119 |     }
+      |     ^
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::capacity_calculation()’:
+../HetNet_toc_Sim.cpp:292:26: warning: ‘bandwidth’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  292 |                 capacity = bandwidth * log2(1 + sinr); //!!!!!!!!!!!!!!!log2 kokodake
+      |                 ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::capacity_calculation2()’:
+../HetNet_toc_Sim.cpp:473:26: warning: ‘bandwidth’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  473 |                 capacity = bandwidth * log2(1 + sinr); //!!!!!!!!!!!!!!!log2 kokodake
+      |                 ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::execute_sim_darwinian(std::vector<double>)’:
+../HetNet_toc_Sim.cpp:521:16: warning: ‘time_step’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  521 |         printf ("self.time_step: %d\n", time_step);
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../HetNet_toc_Sim.cpp
+ 
+Building file: ../HetNet_toc_UE.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_UE.d" -MT"HetNet_toc_UE.o" -o "HetNet_toc_UE.o" "../HetNet_toc_UE.cpp"
+../HetNet_toc_UE.cpp: In member function ‘double UE::get_TX_power()’:
+../HetNet_toc_UE.cpp:75:27: warning: variable ‘power’ set but not used [-Wunused-but-set-variable]
+   75 |         double tmp_power, power;
+      |                           ^~~~~
+../HetNet_toc_UE.cpp:86:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   86 |     }
+      |     ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::append_interf_dl(double)’:
+../HetNet_toc_UE.cpp:98:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   98 |     }
+      |     ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::cp_data_list()’:
+../HetNet_toc_UE.cpp:102:5: warning: no return statement in function returning non-void [-Wreturn-type]
+  102 |     }
+      |     ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::send(int)’:
+../HetNet_toc_UE.cpp:224:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  224 | }
+      | ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::send_test(int)’:
+../HetNet_toc_UE.cpp:274:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  274 | }
+      | ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::recieve(int)’:
+../HetNet_toc_UE.cpp:333:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  333 | }
+      | ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::recieve_test(int)’:
+../HetNet_toc_UE.cpp:383:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  383 | }
+      | ^
+../HetNet_toc_UE.cpp: In member function ‘BS* UE::find_BS(BS*)’:
+../HetNet_toc_UE.cpp:470:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<BS*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  470 |             for (int i=0; i<mbs_min_list.size(); i++){
+      |                           ~^~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_UE.cpp: In member function ‘void UE::gen_random_data_ue(int)’:
+../HetNet_toc_UE.cpp:570:17: warning: unused variable ‘repeat_interval’ [-Wunused-variable]
+  570 |             int repeat_interval = 100;
+      |                 ^~~~~~~~~~~~~~~
+Finished building: ../HetNet_toc_UE.cpp
+ 
+Building file: ../HetNet_toc_func.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_func.d" -MT"HetNet_toc_func.o" -o "HetNet_toc_func.o" "../HetNet_toc_func.cpp"
+Finished building: ../HetNet_toc_func.cpp
+ 
+Building target: code_c
+Invoking: GCC C++ Linker
+g++  -o "code_c"  ./HetNet_toc.o ./HetNet_toc_BS.o ./HetNet_toc_Link.o ./HetNet_toc_Sim.o ./HetNet_toc_UE.o ./HetNet_toc_func.o ./darwinian_rbm_rap.o ./randomGenerator.o   
+Finished building target: code_c
+ 
+17:39:41 **** Incremental Build of configuration Debug for project code_c ****
+make all 
+make: Nothing to be done for 'all'.
+17:45:27 **** Incremental Build of configuration Debug for project code_c ****
+make all 
+Building file: ../HetNet_toc_Sim.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_Sim.d" -MT"HetNet_toc_Sim.o" -o "HetNet_toc_Sim.o" "../HetNet_toc_Sim.cpp"
+../HetNet_toc_Sim.cpp: In constructor ‘Simulator::Simulator(std::vector<double>)’:
+../HetNet_toc_Sim.cpp:42:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   42 |         for (int i=0; i<(position_list.size()/2-1); i++){
+      |                       ~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::shadowing(BS*, UE*, int)’:
+../HetNet_toc_Sim.cpp:94:13: warning: unused variable ‘shadowing_MBS_MBS’ [-Wunused-variable]
+   94 |         int shadowing_MBS_MBS = 8; //#dB
+      |             ^~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:97:13: warning: unused variable ‘shadowing_UE_UE’ [-Wunused-variable]
+   97 |         int shadowing_UE_UE = 12;
+      |             ^~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:98:13: warning: unused variable ‘shadowing_MBS_SBS’ [-Wunused-variable]
+   98 |         int shadowing_MBS_SBS = 6;
+      |             ^~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:99:13: warning: unused variable ‘shadowing_SBS_SBS’ [-Wunused-variable]
+   99 |         int shadowing_SBS_SBS = 6;
+      |             ^~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::capacity_calculation()’:
+../HetNet_toc_Sim.cpp:261:36: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Link*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  261 |         printf("Link_list vector: %d\n", Link_list.size());
+      |                                   ~^     ~~~~~~~~~~~~~~~~
+      |                                    |                   |
+      |                                    int                 std::vector<Link*>::size_type {aka long unsigned int}
+      |                                   %ld
+../HetNet_toc_Sim.cpp:244:16: warning: unused variable ‘noise_floor’ [-Wunused-variable]
+  244 |         double noise_floor = -108;  //#dBm    #Presentation of Specification to TSG or WG - 3GPP
+      |                ^~~~~~~~~~~
+../HetNet_toc_Sim.cpp:245:13: warning: unused variable ‘i’ [-Wunused-variable]
+  245 |         int i;
+      |             ^
+../HetNet_toc_Sim.cpp:246:13: warning: unused variable ‘num_SINR’ [-Wunused-variable]
+  246 |         int num_SINR = 0;
+      |             ^~~~~~~~
+../HetNet_toc_Sim.cpp:247:28: warning: unused variable ‘interf_tmp’ [-Wunused-variable]
+  247 |         double sinr_upper, interf_tmp;
+      |                            ^~~~~~~~~~
+../HetNet_toc_Sim.cpp:249:16: warning: unused variable ‘interf’ [-Wunused-variable]
+  249 |         double interf;
+      |                ^~~~~~
+../HetNet_toc_Sim.cpp:253:16: warning: unused variable ‘noise_tmp’ [-Wunused-variable]
+  253 |         double noise_tmp;
+      |                ^~~~~~~~~
+../HetNet_toc_Sim.cpp:254:16: warning: unused variable ‘noise_tmp_db’ [-Wunused-variable]
+  254 |         double noise_tmp_db;
+      |                ^~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:255:16: warning: unused variable ‘sinr_bottom’ [-Wunused-variable]
+  255 |         double sinr_bottom, sinr;
+      |                ^~~~~~~~~~~
+../HetNet_toc_Sim.cpp:318:5: warning: no return statement in function returning non-void [-Wreturn-type]
+  318 |     }
+      |     ^
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::capacity_calculation2()’:
+../HetNet_toc_Sim.cpp:349:13: warning: unused variable ‘i’ [-Wunused-variable]
+  349 |         int i;
+      |             ^
+../HetNet_toc_Sim.cpp:499:5: warning: no return statement in function returning non-void [-Wreturn-type]
+  499 |     }
+      |     ^
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::execute_sim_darwinian(std::vector<double>)’:
+../HetNet_toc_Sim.cpp:882:27: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  882 |         printf("UE_list: %d\n", UE_list.size());
+      |                          ~^     ~~~~~~~~~~~~~~
+      |                           |                 |
+      |                           int               std::vector<UE*>::size_type {aka long unsigned int}
+      |                          %ld
+../HetNet_toc_Sim.cpp:913:5: warning: no return statement in function returning non-void [-Wreturn-type]
+  913 |     }
+      |     ^
+../HetNet_toc_Sim.cpp: In member function ‘void Simulator::move_file(std::vector<double>)’:
+../HetNet_toc_Sim.cpp:1037:38: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+ 1037 |             if ((i % 2 == 0) && (i/2 < UE_list.size())){
+      |                                  ~~~~^~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:1035:13: warning: unused variable ‘ind’ [-Wunused-variable]
+ 1035 |         int ind = time_step / 10;
+      |             ^~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::shadowing(BS*, UE*, int)’:
+../HetNet_toc_Sim.cpp:119:5: warning: control reaches end of non-void function [-Wreturn-type]
+  119 |     }
+      |     ^
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::capacity_calculation()’:
+../HetNet_toc_Sim.cpp:292:26: warning: ‘bandwidth’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  292 |                 capacity = bandwidth * log2(1 + sinr); //!!!!!!!!!!!!!!!log2 kokodake
+      |                 ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::capacity_calculation2()’:
+../HetNet_toc_Sim.cpp:473:26: warning: ‘bandwidth’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  473 |                 capacity = bandwidth * log2(1 + sinr); //!!!!!!!!!!!!!!!log2 kokodake
+      |                 ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::execute_sim_darwinian(std::vector<double>)’:
+../HetNet_toc_Sim.cpp:521:16: warning: ‘time_step’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  521 |         printf ("self.time_step: %d\n", time_step);
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../HetNet_toc_Sim.cpp
+ 
+Building target: code_c
+Invoking: GCC C++ Linker
+g++  -o "code_c"  ./HetNet_toc.o ./HetNet_toc_BS.o ./HetNet_toc_Link.o ./HetNet_toc_Sim.o ./HetNet_toc_UE.o ./HetNet_toc_func.o ./darwinian_rbm_rap.o ./randomGenerator.o   
+Finished building target: code_c
+ 
+15:28:40 **** Build of configuration Debug for project code_c ****
+make all 
+Building file: ../HetNet_toc.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc.d" -MT"HetNet_toc.o" -o "HetNet_toc.o" "../HetNet_toc.cpp"
+../HetNet_toc.cpp: In function ‘int main()’:
+../HetNet_toc.cpp:170:36: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  170 |     printf("position_list.size(): %d\n", position_list.size());
+      |                                   ~^     ~~~~~~~~~~~~~~~~~~~~
+      |                                    |                       |
+      |                                    int                     std::vector<double>::size_type {aka long unsigned int}
+      |                                   %ld
+../HetNet_toc.cpp:174:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  174 |     for (int i=0; i< (position_list.size()/2 -1); i++){
+      |                   ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc.cpp:210:45: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  210 |             printf("(*ue).data_list.size():%d\n", (*ue).data_list.size());
+      |                                            ~^     ~~~~~~~~~~~~~~~~~~~~~~
+      |                                             |                         |
+      |                                             int                       std::vector<Data*>::size_type {aka long unsigned int}
+      |                                            %ld
+../HetNet_toc.cpp:222:45: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  222 |             printf("(*ue).data_list.size():%d\n", (*ue).data_list.size());
+      |                                            ~^     ~~~~~~~~~~~~~~~~~~~~~~
+      |                                             |                         |
+      |                                             int                       std::vector<Data*>::size_type {aka long unsigned int}
+      |                                            %ld
+../HetNet_toc.cpp:232:45: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  232 |             printf("(*ue).data_list.size():%d\n", (*ue).data_list.size());
+      |                                            ~^     ~~~~~~~~~~~~~~~~~~~~~~
+      |                                             |                         |
+      |                                             int                       std::vector<Data*>::size_type {aka long unsigned int}
+      |                                            %ld
+../HetNet_toc.cpp:147:21: warning: variable ‘cell_id’ set but not used [-Wunused-but-set-variable]
+  147 |     int cell_color, cell_id, bs_id;
+      |                     ^~~~~~~
+Finished building: ../HetNet_toc.cpp
+ 
+Building file: ../HetNet_toc_BS.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_BS.d" -MT"HetNet_toc_BS.o" -o "HetNet_toc_BS.o" "../HetNet_toc_BS.cpp"
+../HetNet_toc_BS.cpp: In member function ‘std::pair<double, double> BS::get_bs_sentdata_total()’:
+../HetNet_toc_BS.cpp:135:43: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  135 |         printf("sentdata_ul_list.size(): %d\n", sentdata_ul_list.size());
+      |                                          ~^     ~~~~~~~~~~~~~~~~~~~~~~~
+      |                                           |                          |
+      |                                           int                        std::vector<double>::size_type {aka long unsigned int}
+      |                                          %ld
+../HetNet_toc_BS.cpp:136:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  136 |         for (int i=0; i<sentdata_ul_list.size(); i++){
+      |                       ~^~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_BS.cpp:137:32: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘__gnu_cxx::__alloc_traits<std::allocator<double>, double>::value_type’ {aka ‘double’} [-Wformat=]
+  137 |             printf("sentdata: %d\n", sentdata_ul_list[i]);
+      |                               ~^
+      |                                |
+      |                                int
+      |                               %f
+../HetNet_toc_BS.cpp: In member function ‘void BS::set_c_connecting_UE()’:
+../HetNet_toc_BS.cpp:258:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  258 |         for (int i=0; i<connecting_UE_ul.size(); i++){
+      |                       ~^~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_BS.cpp:261:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  261 |         for (int i=0; i<connecting_UE_dl.size(); i++){
+      |                       ~^~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../HetNet_toc_BS.cpp
+ 
+Building file: ../HetNet_toc_Link.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_Link.d" -MT"HetNet_toc_Link.o" -o "HetNet_toc_Link.o" "../HetNet_toc_Link.cpp"
+Finished building: ../HetNet_toc_Link.cpp
+ 
+Building file: ../HetNet_toc_Sim.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_Sim.d" -MT"HetNet_toc_Sim.o" -o "HetNet_toc_Sim.o" "../HetNet_toc_Sim.cpp"
+../HetNet_toc_Sim.cpp: In constructor ‘Simulator::Simulator(std::vector<double>)’:
+../HetNet_toc_Sim.cpp:43:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   43 |         for (int i=0; i<(position_list.size()/2-1); i++){
+      |                       ~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::shadowing(BS*, UE*, int)’:
+../HetNet_toc_Sim.cpp:95:13: warning: unused variable ‘shadowing_MBS_MBS’ [-Wunused-variable]
+   95 |         int shadowing_MBS_MBS = 8; //#dB
+      |             ^~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:98:13: warning: unused variable ‘shadowing_UE_UE’ [-Wunused-variable]
+   98 |         int shadowing_UE_UE = 12;
+      |             ^~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:99:13: warning: unused variable ‘shadowing_MBS_SBS’ [-Wunused-variable]
+   99 |         int shadowing_MBS_SBS = 6;
+      |             ^~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:100:13: warning: unused variable ‘shadowing_SBS_SBS’ [-Wunused-variable]
+  100 |         int shadowing_SBS_SBS = 6;
+      |             ^~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::capacity_calculation()’:
+../HetNet_toc_Sim.cpp:264:36: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Link*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  264 |         printf("Link_list vector: %d\n", Link_list.size());
+      |                                   ~^     ~~~~~~~~~~~~~~~~
+      |                                    |                   |
+      |                                    int                 std::vector<Link*>::size_type {aka long unsigned int}
+      |                                   %ld
+../HetNet_toc_Sim.cpp:246:13: warning: unused variable ‘i’ [-Wunused-variable]
+  246 |         int i;
+      |             ^
+../HetNet_toc_Sim.cpp:247:13: warning: unused variable ‘num_SINR’ [-Wunused-variable]
+  247 |         int num_SINR = 0;
+      |             ^~~~~~~~
+../HetNet_toc_Sim.cpp:248:28: warning: unused variable ‘interf_tmp’ [-Wunused-variable]
+  248 |         double sinr_upper, interf_tmp;
+      |                            ^~~~~~~~~~
+../HetNet_toc_Sim.cpp:250:16: warning: unused variable ‘interf’ [-Wunused-variable]
+  250 |         double interf;
+      |                ^~~~~~
+../HetNet_toc_Sim.cpp:334:5: warning: no return statement in function returning non-void [-Wreturn-type]
+  334 |     }
+      |     ^
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::capacity_calculation2()’:
+../HetNet_toc_Sim.cpp:365:13: warning: unused variable ‘i’ [-Wunused-variable]
+  365 |         int i;
+      |             ^
+../HetNet_toc_Sim.cpp:515:5: warning: no return statement in function returning non-void [-Wreturn-type]
+  515 |     }
+      |     ^
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::execute_sim_darwinian(std::vector<double>)’:
+../HetNet_toc_Sim.cpp:577:49: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  577 |                 printf("(*ue).data_list.size():%d\n", (*ue).data_list.size());
+      |                                                ~^     ~~~~~~~~~~~~~~~~~~~~~~
+      |                                                 |                         |
+      |                                                 int                       std::vector<Data*>::size_type {aka long unsigned int}
+      |                                                %ld
+../HetNet_toc_Sim.cpp:578:54: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  578 |                 printf("(*ue).data_list_copy.size():%d\n", (*ue).data_list_copy.size());
+      |                                                     ~^     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                      |                              |
+      |                                                      int                            std::vector<Data*>::size_type {aka long unsigned int}
+      |                                                     %ld
+../HetNet_toc_Sim.cpp:634:53: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  634 |                     printf("(*ue).data_list.size():%d\n", (*ue).data_list.size());
+      |                                                    ~^     ~~~~~~~~~~~~~~~~~~~~~~
+      |                                                     |                         |
+      |                                                     int                       std::vector<Data*>::size_type {aka long unsigned int}
+      |                                                    %ld
+../HetNet_toc_Sim.cpp:635:58: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  635 |                     printf("(*ue).data_list_copy.size():%d\n", (*ue).data_list_copy.size());
+      |                                                         ~^     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                          |                              |
+      |                                                          int                            std::vector<Data*>::size_type {aka long unsigned int}
+      |                                                         %ld
+../HetNet_toc_Sim.cpp:649:53: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  649 |                     printf("sentdata_ul_list.size: %d\n", (*bs).sentdata_ul_list.size());
+      |                                                    ~^     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                     |                                |
+      |                                                     int                              std::vector<double>::size_type {aka long unsigned int}
+      |                                                    %ld
+../HetNet_toc_Sim.cpp:650:53: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  650 |                     printf("sentdata_dl_list.size: %d\n", (*bs).sentdata_dl_list.size());
+      |                                                    ~^     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                     |                                |
+      |                                                     int                              std::vector<double>::size_type {aka long unsigned int}
+      |                                                    %ld
+../HetNet_toc_Sim.cpp:735:53: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  735 |                     printf("(*ue).data_list.size():%d\n", (*ue).data_list.size());
+      |                                                    ~^     ~~~~~~~~~~~~~~~~~~~~~~
+      |                                                     |                         |
+      |                                                     int                       std::vector<Data*>::size_type {aka long unsigned int}
+      |                                                    %ld
+../HetNet_toc_Sim.cpp:800:49: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  800 |                 printf("(*ue).data_list.size():%d\n", (*ue).data_list.size());
+      |                                                ~^     ~~~~~~~~~~~~~~~~~~~~~~
+      |                                                 |                         |
+      |                                                 int                       std::vector<Data*>::size_type {aka long unsigned int}
+      |                                                %ld
+../HetNet_toc_Sim.cpp:965:27: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  965 |         printf("UE_list: %d\n", UE_list.size());
+      |                          ~^     ~~~~~~~~~~~~~~
+      |                           |                 |
+      |                           int               std::vector<UE*>::size_type {aka long unsigned int}
+      |                          %ld
+../HetNet_toc_Sim.cpp:976:45: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  976 |             printf("(*ue).data_list.size():%d\n", (*ue).data_list.size());
+      |                                            ~^     ~~~~~~~~~~~~~~~~~~~~~~
+      |                                             |                         |
+      |                                             int                       std::vector<Data*>::size_type {aka long unsigned int}
+      |                                            %ld
+../HetNet_toc_Sim.cpp:997:5: warning: no return statement in function returning non-void [-Wreturn-type]
+  997 |     }
+      |     ^
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::execute_sim_random(std::vector<double>)’:
+../HetNet_toc_Sim.cpp:1060:49: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+ 1060 |                 printf("(*ue).data_list.size():%d\n", (*ue).data_list.size());
+      |                                                ~^     ~~~~~~~~~~~~~~~~~~~~~~
+      |                                                 |                         |
+      |                                                 int                       std::vector<Data*>::size_type {aka long unsigned int}
+      |                                                %ld
+../HetNet_toc_Sim.cpp:1226:27: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+ 1226 |         printf("UE_list: %d\n", UE_list.size());
+      |                          ~^     ~~~~~~~~~~~~~~
+      |                           |                 |
+      |                           int               std::vector<UE*>::size_type {aka long unsigned int}
+      |                          %ld
+../HetNet_toc_Sim.cpp:1237:45: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+ 1237 |             printf("(*ue).data_list.size():%d\n", (*ue).data_list.size());
+      |                                            ~^     ~~~~~~~~~~~~~~~~~~~~~~
+      |                                             |                         |
+      |                                             int                       std::vector<Data*>::size_type {aka long unsigned int}
+      |                                            %ld
+../HetNet_toc_Sim.cpp:1018:15: warning: unused variable ‘deme_list’ [-Wunused-variable]
+ 1018 |         DEME *deme_list;
+      |               ^~~~~~~~~
+../HetNet_toc_Sim.cpp:1258:5: warning: no return statement in function returning non-void [-Wreturn-type]
+ 1258 |     }
+      |     ^
+../HetNet_toc_Sim.cpp: In member function ‘void Simulator::set_send_recieve()’:
+../HetNet_toc_Sim.cpp:1341:48: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Link*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+ 1341 |                     printf("Link_list.size(): %d\n", Link_list.size());
+      |                                               ~^     ~~~~~~~~~~~~~~~~
+      |                                                |                   |
+      |                                                int                 std::vector<Link*>::size_type {aka long unsigned int}
+      |                                               %ld
+../HetNet_toc_Sim.cpp:1361:48: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Link*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+ 1361 |                     printf("Link_list.size(): %d\n", Link_list.size());
+      |                                               ~^     ~~~~~~~~~~~~~~~~
+      |                                                |                   |
+      |                                                int                 std::vector<Link*>::size_type {aka long unsigned int}
+      |                                               %ld
+../HetNet_toc_Sim.cpp: In member function ‘void Simulator::move_file(std::vector<double>)’:
+../HetNet_toc_Sim.cpp:1384:38: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+ 1384 |             if ((i % 2 == 0) && (i/2 < UE_list.size())){
+      |                                  ~~~~^~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:1382:13: warning: unused variable ‘ind’ [-Wunused-variable]
+ 1382 |         int ind = time_step / 10;
+      |             ^~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::shadowing(BS*, UE*, int)’:
+../HetNet_toc_Sim.cpp:120:5: warning: control reaches end of non-void function [-Wreturn-type]
+  120 |     }
+      |     ^
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::capacity_calculation2()’:
+../HetNet_toc_Sim.cpp:489:26: warning: ‘bandwidth’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  489 |                 capacity = bandwidth * log2(1 + sinr); //!!!!!!!!!!!!!!!log2 kokodake
+      |                 ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::execute_sim_darwinian(std::vector<double>)’:
+../HetNet_toc_Sim.cpp:537:16: warning: ‘time_step’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  537 |         printf ("self.time_step: %d\n", time_step);
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::execute_sim_random(std::vector<double>)’:
+../HetNet_toc_Sim.cpp:1020:16: warning: ‘time_step’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+ 1020 |         printf ("self.time_step: %d\n", time_step);
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../HetNet_toc_Sim.cpp
+ 
+Building file: ../HetNet_toc_UE.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_UE.d" -MT"HetNet_toc_UE.o" -o "HetNet_toc_UE.o" "../HetNet_toc_UE.cpp"
+../HetNet_toc_UE.cpp: In member function ‘double UE::get_TX_power()’:
+../HetNet_toc_UE.cpp:75:27: warning: variable ‘power’ set but not used [-Wunused-but-set-variable]
+   75 |         double tmp_power, power;
+      |                           ^~~~~
+../HetNet_toc_UE.cpp:86:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   86 |     }
+      |     ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::append_interf_dl(double)’:
+../HetNet_toc_UE.cpp:98:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   98 |     }
+      |     ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::cp_data_list()’:
+../HetNet_toc_UE.cpp:107:36: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  107 |         printf("data_list.size(): %d\n", data_list.size());
+      |                                   ~^     ~~~~~~~~~~~~~~~~
+      |                                    |                   |
+      |                                    int                 std::vector<Data*>::size_type {aka long unsigned int}
+      |                                   %ld
+../HetNet_toc_UE.cpp:108:41: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  108 |         printf("data_list_copy.size(): %d\n", data_list_copy.size());
+      |                                        ~^     ~~~~~~~~~~~~~~~~~~~~~
+      |                                         |                        |
+      |                                         int                      std::vector<Data*>::size_type {aka long unsigned int}
+      |                                        %ld
+../HetNet_toc_UE.cpp:111:5: warning: no return statement in function returning non-void [-Wreturn-type]
+  111 |     }
+      |     ^
+../HetNet_toc_UE.cpp: In member function ‘Link* UE::find_link(BS*, UE*, int)’:
+../HetNet_toc_UE.cpp:117:36: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Link*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  117 |         printf("Link_list.size(): %d\n", (*sim).Link_list.size());
+      |                                   ~^     ~~~~~~~~~~~~~~~~~~~~~~~
+      |                                    |                          |
+      |                                    int                        std::vector<Link*>::size_type {aka long unsigned int}
+      |                                   %ld
+../HetNet_toc_UE.cpp: In member function ‘double UE::send(int)’:
+../HetNet_toc_UE.cpp:304:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  304 | }
+      | ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::send_test(int)’:
+../HetNet_toc_UE.cpp:382:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  382 | }
+      | ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::recieve(int)’:
+../HetNet_toc_UE.cpp:398:35: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  398 |         printf("data_list.size():%d\n", data_list.size());
+      |                                  ~^     ~~~~~~~~~~~~~~~~
+      |                                   |                   |
+      |                                   int                 std::vector<Data*>::size_type {aka long unsigned int}
+      |                                  %ld
+../HetNet_toc_UE.cpp:459:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  459 | }
+      | ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::recieve_test(int)’:
+../HetNet_toc_UE.cpp:475:35: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  475 |         printf("data_list.size():%d\n", data_list.size());
+      |                                  ~^     ~~~~~~~~~~~~~~~~
+      |                                   |                   |
+      |                                   int                 std::vector<Data*>::size_type {aka long unsigned int}
+      |                                  %ld
+../HetNet_toc_UE.cpp:528:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  528 | }
+      | ^
+../HetNet_toc_UE.cpp: In member function ‘BS* UE::find_BS(BS*)’:
+../HetNet_toc_UE.cpp:619:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<BS*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  619 |             for (int i=0; i<mbs_min_list.size(); i++){
+      |                           ~^~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_UE.cpp: In member function ‘void UE::gen_random_data_ue(int)’:
+../HetNet_toc_UE.cpp:719:17: warning: unused variable ‘repeat_interval’ [-Wunused-variable]
+  719 |             int repeat_interval = 100;
+      |                 ^~~~~~~~~~~~~~~
+../HetNet_toc_UE.cpp:749:35: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  749 |         printf("data_list.size():%d, %d \n", data_list.size(), time_step);
+      |                                  ~^          ~~~~~~~~~~~~~~~~
+      |                                   |                        |
+      |                                   int                      std::vector<Data*>::size_type {aka long unsigned int}
+      |                                  %ld
+Finished building: ../HetNet_toc_UE.cpp
+ 
+Building file: ../HetNet_toc_func.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_func.d" -MT"HetNet_toc_func.o" -o "HetNet_toc_func.o" "../HetNet_toc_func.cpp"
+Finished building: ../HetNet_toc_func.cpp
+ 
+Building file: ../darwinian_rbm_rap.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"darwinian_rbm_rap.d" -MT"darwinian_rbm_rap.o" -o "darwinian_rbm_rap.o" "../darwinian_rbm_rap.cpp"
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::train_rbm(float*, int, int)’:
+../darwinian_rbm_rap.cpp:93:9: warning: unused variable ‘i’ [-Wunused-variable]
+   93 |     int i, j, k;
+      |         ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::continuousPattern(float*, int, int)’:
+../darwinian_rbm_rap.cpp:447:9: warning: unused variable ‘t’ [-Wunused-variable]
+  447 |  int i, t;
+      |         ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::trainNetworksRandom(int)’:
+../darwinian_rbm_rap.cpp:521:15: warning: unused variable ‘k’ [-Wunused-variable]
+  521 |  int d, i, j, k, l;
+      |               ^
+../darwinian_rbm_rap.cpp:521:18: warning: unused variable ‘l’ [-Wunused-variable]
+  521 |  int d, i, j, k, l;
+      |                  ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::setLandscape(int, int)’:
+../darwinian_rbm_rap.cpp:673:6: warning: unused variable ‘i’ [-Wunused-variable]
+  673 |  int i, j;
+      |      ^
+../darwinian_rbm_rap.cpp:673:9: warning: unused variable ‘j’ [-Wunused-variable]
+  673 |  int i, j;
+      |         ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::setNeighborDemes(int, int)’:
+../darwinian_rbm_rap.cpp:701:4: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  701 |    if(j > 0)   matrixNeighbors[p][c++] = pos[i-1][j-1];
+      |    ^~
+../darwinian_rbm_rap.cpp:702:16: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  702 |                matrixNeighbors[p][c++] = pos[i-1][j];
+      |                ^~~~~~~~~~~~~~~
+../darwinian_rbm_rap.cpp:708:4: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  708 |    if(j > 0)   matrixNeighbors[p][c++] = pos[i+1][j-1];
+      |    ^~
+../darwinian_rbm_rap.cpp:709:16: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  709 |                matrixNeighbors[p][c++] = pos[i+1][j];
+      |                ^~~~~~~~~~~~~~~
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::evolution_initialization(int)’:
+../darwinian_rbm_rap.cpp:718:19: warning: unused variable ‘k’ [-Wunused-variable]
+  718 |         int i, j, k, d, e = 0;
+      |                   ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::evolution_gen_environment(int)’:
+../darwinian_rbm_rap.cpp:765:21: warning: unused variable ‘j’ [-Wunused-variable]
+  765 |              int i, j, k, d, e = 0;
+      |                     ^
+../darwinian_rbm_rap.cpp:765:24: warning: unused variable ‘k’ [-Wunused-variable]
+  765 |              int i, j, k, d, e = 0;
+      |                        ^
+../darwinian_rbm_rap.cpp:765:30: warning: unused variable ‘e’ [-Wunused-variable]
+  765 |              int i, j, k, d, e = 0;
+      |                              ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::test_versatility(int)’:
+../darwinian_rbm_rap.cpp:822:30: warning: unused variable ‘e’ [-Wunused-variable]
+  822 |              int i, j, k, d, e = 0;
+      |                              ^
+../darwinian_rbm_rap.cpp: In member function ‘DEME* Darwinian_deme::evolution_gen_update(int)’:
+../darwinian_rbm_rap.cpp:869:24: warning: unused variable ‘k’ [-Wunused-variable]
+  869 |              int i, j, k, d, e = 0;
+      |                        ^
+../darwinian_rbm_rap.cpp:869:30: warning: unused variable ‘e’ [-Wunused-variable]
+  869 |              int i, j, k, d, e = 0;
+      |                              ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::evolution_gen_calcfitness(int)’:
+../darwinian_rbm_rap.cpp:932:24: warning: unused variable ‘k’ [-Wunused-variable]
+  932 |              int i, j, k, d, e = 0;
+      |                        ^
+../darwinian_rbm_rap.cpp:932:30: warning: unused variable ‘e’ [-Wunused-variable]
+  932 |              int i, j, k, d, e = 0;
+      |                              ^
+../darwinian_rbm_rap.cpp: In member function ‘float* Darwinian_deme::evolution_gen_calcbestfitness(int)’:
+../darwinian_rbm_rap.cpp:1028:52: warning: format ‘%f’ expects a matching ‘double’ argument [-Wformat=]
+ 1028 |    printf("darwinian: %d\t%f\t%f\t%f\t%d\t%d\t%f\t%f\t", t, bestW, avgW/(float)DN, worstW, deme[bestD].storedQ[bestP], deme[bestD].storedP[bestP], deme[bestD].storedD[bestP]);
+      |                                                   ~^
+      |                                                    |
+      |                                                    double
+../darwinian_rbm_rap.cpp:990:21: warning: unused variable ‘j’ [-Wunused-variable]
+  990 |              int i, j, k, d, e = 0;
+      |                     ^
+../darwinian_rbm_rap.cpp:990:24: warning: unused variable ‘k’ [-Wunused-variable]
+  990 |              int i, j, k, d, e = 0;
+      |                        ^
+../darwinian_rbm_rap.cpp:990:30: warning: unused variable ‘e’ [-Wunused-variable]
+  990 |              int i, j, k, d, e = 0;
+      |                              ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::evolution_gen_calcmutation(int)’:
+../darwinian_rbm_rap.cpp:1045:22: warning: unused variable ‘i’ [-Wunused-variable]
+ 1045 |                  int i, j, k, d, e = 0;
+      |                      ^
+../darwinian_rbm_rap.cpp:1045:25: warning: unused variable ‘j’ [-Wunused-variable]
+ 1045 |                  int i, j, k, d, e = 0;
+      |                         ^
+../darwinian_rbm_rap.cpp:1045:28: warning: unused variable ‘k’ [-Wunused-variable]
+ 1045 |                  int i, j, k, d, e = 0;
+      |                            ^
+../darwinian_rbm_rap.cpp:1045:34: warning: unused variable ‘e’ [-Wunused-variable]
+ 1045 |                  int i, j, k, d, e = 0;
+      |                                  ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::evolution_gen_replacemutation(int)’:
+../darwinian_rbm_rap.cpp:1065:25: warning: unused variable ‘j’ [-Wunused-variable]
+ 1065 |                  int i, j, k, d, e = 0;
+      |                         ^
+../darwinian_rbm_rap.cpp:1065:34: warning: unused variable ‘e’ [-Wunused-variable]
+ 1065 |                  int i, j, k, d, e = 0;
+      |                                  ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::evolution_gen_learnbest(int)’:
+../darwinian_rbm_rap.cpp:1101:25: warning: unused variable ‘j’ [-Wunused-variable]
+ 1101 |                  int i, j, k, d, e = 0;
+      |                         ^
+../darwinian_rbm_rap.cpp:1101:34: warning: unused variable ‘e’ [-Wunused-variable]
+ 1101 |                  int i, j, k, d, e = 0;
+      |                                  ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::evolution_gen_learnworst(int)’:
+../darwinian_rbm_rap.cpp:1135:25: warning: unused variable ‘j’ [-Wunused-variable]
+ 1135 |                  int i, j, k, d, e = 0;
+      |                         ^
+../darwinian_rbm_rap.cpp:1135:34: warning: unused variable ‘e’ [-Wunused-variable]
+ 1135 |                  int i, j, k, d, e = 0;
+      |                                  ^
+../darwinian_rbm_rap.cpp: In member function ‘DEME* Darwinian_deme::evolution_gen_selection(int)’:
+../darwinian_rbm_rap.cpp:1169:22: warning: unused variable ‘i’ [-Wunused-variable]
+ 1169 |                  int i, j, k, d, e = 0;
+      |                      ^
+../darwinian_rbm_rap.cpp:1169:25: warning: unused variable ‘j’ [-Wunused-variable]
+ 1169 |                  int i, j, k, d, e = 0;
+      |                         ^
+../darwinian_rbm_rap.cpp:1169:28: warning: unused variable ‘k’ [-Wunused-variable]
+ 1169 |                  int i, j, k, d, e = 0;
+      |                            ^
+../darwinian_rbm_rap.cpp:1169:34: warning: unused variable ‘e’ [-Wunused-variable]
+ 1169 |                  int i, j, k, d, e = 0;
+      |                                  ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::evolution()’:
+../darwinian_rbm_rap.cpp:1234:13: warning: unused variable ‘i’ [-Wunused-variable]
+ 1234 |         int i, j, k, d, e = 0;
+      |             ^
+../darwinian_rbm_rap.cpp:1234:16: warning: unused variable ‘j’ [-Wunused-variable]
+ 1234 |         int i, j, k, d, e = 0;
+      |                ^
+../darwinian_rbm_rap.cpp:1234:19: warning: unused variable ‘k’ [-Wunused-variable]
+ 1234 |         int i, j, k, d, e = 0;
+      |                   ^
+../darwinian_rbm_rap.cpp:1234:25: warning: unused variable ‘e’ [-Wunused-variable]
+ 1234 |         int i, j, k, d, e = 0;
+      |                         ^
+Finished building: ../darwinian_rbm_rap.cpp
+ 
+Building target: code_c
+Invoking: GCC C++ Linker
+g++  -o "code_c"  ./HetNet_toc.o ./HetNet_toc_BS.o ./HetNet_toc_Link.o ./HetNet_toc_Sim.o ./HetNet_toc_UE.o ./HetNet_toc_func.o ./darwinian_rbm_rap.o ./randomGenerator.o   
+Finished building target: code_c
+ 
+15:35:01 **** Incremental Build of configuration Debug for project code_c ****
+make all 
+make: Nothing to be done for 'all'.
+15:43:46 **** Incremental Build of configuration Debug for project code_c ****
+make all 
+make: Nothing to be done for 'all'.
+15:45:35 **** Incremental Build of configuration Debug for project code_c ****
+make all 
+make: Nothing to be done for 'all'.
+15:45:53 **** Build of configuration Debug for project code_c ****
+make all 
+Building file: ../HetNet_toc.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -ftest-coverage -fprofile-arcs -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc.d" -MT"HetNet_toc.o" -o "HetNet_toc.o" "../HetNet_toc.cpp"
+../HetNet_toc.cpp: In function ‘int main()’:
+../HetNet_toc.cpp:170:36: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  170 |     printf("position_list.size(): %d\n", position_list.size());
+      |                                   ~^     ~~~~~~~~~~~~~~~~~~~~
+      |                                    |                       |
+      |                                    int                     std::vector<double>::size_type {aka long unsigned int}
+      |                                   %ld
+../HetNet_toc.cpp:174:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  174 |     for (int i=0; i< (position_list.size()/2 -1); i++){
+      |                   ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc.cpp:210:45: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  210 |             printf("(*ue).data_list.size():%d\n", (*ue).data_list.size());
+      |                                            ~^     ~~~~~~~~~~~~~~~~~~~~~~
+      |                                             |                         |
+      |                                             int                       std::vector<Data*>::size_type {aka long unsigned int}
+      |                                            %ld
+../HetNet_toc.cpp:222:45: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  222 |             printf("(*ue).data_list.size():%d\n", (*ue).data_list.size());
+      |                                            ~^     ~~~~~~~~~~~~~~~~~~~~~~
+      |                                             |                         |
+      |                                             int                       std::vector<Data*>::size_type {aka long unsigned int}
+      |                                            %ld
+../HetNet_toc.cpp:232:45: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  232 |             printf("(*ue).data_list.size():%d\n", (*ue).data_list.size());
+      |                                            ~^     ~~~~~~~~~~~~~~~~~~~~~~
+      |                                             |                         |
+      |                                             int                       std::vector<Data*>::size_type {aka long unsigned int}
+      |                                            %ld
+../HetNet_toc.cpp:147:21: warning: variable ‘cell_id’ set but not used [-Wunused-but-set-variable]
+  147 |     int cell_color, cell_id, bs_id;
+      |                     ^~~~~~~
+Finished building: ../HetNet_toc.cpp
+ 
+Building file: ../HetNet_toc_BS.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -ftest-coverage -fprofile-arcs -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_BS.d" -MT"HetNet_toc_BS.o" -o "HetNet_toc_BS.o" "../HetNet_toc_BS.cpp"
+../HetNet_toc_BS.cpp: In member function ‘std::pair<double, double> BS::get_bs_sentdata_total()’:
+../HetNet_toc_BS.cpp:135:43: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  135 |         printf("sentdata_ul_list.size(): %d\n", sentdata_ul_list.size());
+      |                                          ~^     ~~~~~~~~~~~~~~~~~~~~~~~
+      |                                           |                          |
+      |                                           int                        std::vector<double>::size_type {aka long unsigned int}
+      |                                          %ld
+../HetNet_toc_BS.cpp:136:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  136 |         for (int i=0; i<sentdata_ul_list.size(); i++){
+      |                       ~^~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_BS.cpp:137:32: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘__gnu_cxx::__alloc_traits<std::allocator<double>, double>::value_type’ {aka ‘double’} [-Wformat=]
+  137 |             printf("sentdata: %d\n", sentdata_ul_list[i]);
+      |                               ~^
+      |                                |
+      |                                int
+      |                               %f
+../HetNet_toc_BS.cpp: In member function ‘void BS::set_c_connecting_UE()’:
+../HetNet_toc_BS.cpp:258:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  258 |         for (int i=0; i<connecting_UE_ul.size(); i++){
+      |                       ~^~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_BS.cpp:261:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  261 |         for (int i=0; i<connecting_UE_dl.size(); i++){
+      |                       ~^~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../HetNet_toc_BS.cpp
+ 
+Building file: ../HetNet_toc_Link.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -ftest-coverage -fprofile-arcs -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_Link.d" -MT"HetNet_toc_Link.o" -o "HetNet_toc_Link.o" "../HetNet_toc_Link.cpp"
+Finished building: ../HetNet_toc_Link.cpp
+ 
+Building file: ../HetNet_toc_Sim.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -ftest-coverage -fprofile-arcs -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_Sim.d" -MT"HetNet_toc_Sim.o" -o "HetNet_toc_Sim.o" "../HetNet_toc_Sim.cpp"
+../HetNet_toc_Sim.cpp: In constructor ‘Simulator::Simulator(std::vector<double>)’:
+../HetNet_toc_Sim.cpp:43:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   43 |         for (int i=0; i<(position_list.size()/2-1); i++){
+      |                       ~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::shadowing(BS*, UE*, int)’:
+../HetNet_toc_Sim.cpp:95:13: warning: unused variable ‘shadowing_MBS_MBS’ [-Wunused-variable]
+   95 |         int shadowing_MBS_MBS = 8; //#dB
+      |             ^~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:98:13: warning: unused variable ‘shadowing_UE_UE’ [-Wunused-variable]
+   98 |         int shadowing_UE_UE = 12;
+      |             ^~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:99:13: warning: unused variable ‘shadowing_MBS_SBS’ [-Wunused-variable]
+   99 |         int shadowing_MBS_SBS = 6;
+      |             ^~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:100:13: warning: unused variable ‘shadowing_SBS_SBS’ [-Wunused-variable]
+  100 |         int shadowing_SBS_SBS = 6;
+      |             ^~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::capacity_calculation()’:
+../HetNet_toc_Sim.cpp:264:36: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Link*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  264 |         printf("Link_list vector: %d\n", Link_list.size());
+      |                                   ~^     ~~~~~~~~~~~~~~~~
+      |                                    |                   |
+      |                                    int                 std::vector<Link*>::size_type {aka long unsigned int}
+      |                                   %ld
+../HetNet_toc_Sim.cpp:246:13: warning: unused variable ‘i’ [-Wunused-variable]
+  246 |         int i;
+      |             ^
+../HetNet_toc_Sim.cpp:247:13: warning: unused variable ‘num_SINR’ [-Wunused-variable]
+  247 |         int num_SINR = 0;
+      |             ^~~~~~~~
+../HetNet_toc_Sim.cpp:248:28: warning: unused variable ‘interf_tmp’ [-Wunused-variable]
+  248 |         double sinr_upper, interf_tmp;
+      |                            ^~~~~~~~~~
+../HetNet_toc_Sim.cpp:250:16: warning: unused variable ‘interf’ [-Wunused-variable]
+  250 |         double interf;
+      |                ^~~~~~
+../HetNet_toc_Sim.cpp:334:5: warning: no return statement in function returning non-void [-Wreturn-type]
+  334 |     }
+      |     ^
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::capacity_calculation2()’:
+../HetNet_toc_Sim.cpp:365:13: warning: unused variable ‘i’ [-Wunused-variable]
+  365 |         int i;
+      |             ^
+../HetNet_toc_Sim.cpp:515:5: warning: no return statement in function returning non-void [-Wreturn-type]
+  515 |     }
+      |     ^
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::execute_sim_darwinian(std::vector<double>)’:
+../HetNet_toc_Sim.cpp:577:49: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  577 |                 printf("(*ue).data_list.size():%d\n", (*ue).data_list.size());
+      |                                                ~^     ~~~~~~~~~~~~~~~~~~~~~~
+      |                                                 |                         |
+      |                                                 int                       std::vector<Data*>::size_type {aka long unsigned int}
+      |                                                %ld
+../HetNet_toc_Sim.cpp:578:54: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  578 |                 printf("(*ue).data_list_copy.size():%d\n", (*ue).data_list_copy.size());
+      |                                                     ~^     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                      |                              |
+      |                                                      int                            std::vector<Data*>::size_type {aka long unsigned int}
+      |                                                     %ld
+../HetNet_toc_Sim.cpp:634:53: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  634 |                     printf("(*ue).data_list.size():%d\n", (*ue).data_list.size());
+      |                                                    ~^     ~~~~~~~~~~~~~~~~~~~~~~
+      |                                                     |                         |
+      |                                                     int                       std::vector<Data*>::size_type {aka long unsigned int}
+      |                                                    %ld
+../HetNet_toc_Sim.cpp:635:58: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  635 |                     printf("(*ue).data_list_copy.size():%d\n", (*ue).data_list_copy.size());
+      |                                                         ~^     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                          |                              |
+      |                                                          int                            std::vector<Data*>::size_type {aka long unsigned int}
+      |                                                         %ld
+../HetNet_toc_Sim.cpp:649:53: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  649 |                     printf("sentdata_ul_list.size: %d\n", (*bs).sentdata_ul_list.size());
+      |                                                    ~^     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                     |                                |
+      |                                                     int                              std::vector<double>::size_type {aka long unsigned int}
+      |                                                    %ld
+../HetNet_toc_Sim.cpp:650:53: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  650 |                     printf("sentdata_dl_list.size: %d\n", (*bs).sentdata_dl_list.size());
+      |                                                    ~^     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                     |                                |
+      |                                                     int                              std::vector<double>::size_type {aka long unsigned int}
+      |                                                    %ld
+../HetNet_toc_Sim.cpp:735:53: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  735 |                     printf("(*ue).data_list.size():%d\n", (*ue).data_list.size());
+      |                                                    ~^     ~~~~~~~~~~~~~~~~~~~~~~
+      |                                                     |                         |
+      |                                                     int                       std::vector<Data*>::size_type {aka long unsigned int}
+      |                                                    %ld
+../HetNet_toc_Sim.cpp:800:49: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  800 |                 printf("(*ue).data_list.size():%d\n", (*ue).data_list.size());
+      |                                                ~^     ~~~~~~~~~~~~~~~~~~~~~~
+      |                                                 |                         |
+      |                                                 int                       std::vector<Data*>::size_type {aka long unsigned int}
+      |                                                %ld
+../HetNet_toc_Sim.cpp:965:27: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  965 |         printf("UE_list: %d\n", UE_list.size());
+      |                          ~^     ~~~~~~~~~~~~~~
+      |                           |                 |
+      |                           int               std::vector<UE*>::size_type {aka long unsigned int}
+      |                          %ld
+../HetNet_toc_Sim.cpp:976:45: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  976 |             printf("(*ue).data_list.size():%d\n", (*ue).data_list.size());
+      |                                            ~^     ~~~~~~~~~~~~~~~~~~~~~~
+      |                                             |                         |
+      |                                             int                       std::vector<Data*>::size_type {aka long unsigned int}
+      |                                            %ld
+../HetNet_toc_Sim.cpp:997:5: warning: no return statement in function returning non-void [-Wreturn-type]
+  997 |     }
+      |     ^
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::execute_sim_random(std::vector<double>)’:
+../HetNet_toc_Sim.cpp:1060:49: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+ 1060 |                 printf("(*ue).data_list.size():%d\n", (*ue).data_list.size());
+      |                                                ~^     ~~~~~~~~~~~~~~~~~~~~~~
+      |                                                 |                         |
+      |                                                 int                       std::vector<Data*>::size_type {aka long unsigned int}
+      |                                                %ld
+../HetNet_toc_Sim.cpp:1226:27: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+ 1226 |         printf("UE_list: %d\n", UE_list.size());
+      |                          ~^     ~~~~~~~~~~~~~~
+      |                           |                 |
+      |                           int               std::vector<UE*>::size_type {aka long unsigned int}
+      |                          %ld
+../HetNet_toc_Sim.cpp:1237:45: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+ 1237 |             printf("(*ue).data_list.size():%d\n", (*ue).data_list.size());
+      |                                            ~^     ~~~~~~~~~~~~~~~~~~~~~~
+      |                                             |                         |
+      |                                             int                       std::vector<Data*>::size_type {aka long unsigned int}
+      |                                            %ld
+../HetNet_toc_Sim.cpp:1018:15: warning: unused variable ‘deme_list’ [-Wunused-variable]
+ 1018 |         DEME *deme_list;
+      |               ^~~~~~~~~
+../HetNet_toc_Sim.cpp:1258:5: warning: no return statement in function returning non-void [-Wreturn-type]
+ 1258 |     }
+      |     ^
+../HetNet_toc_Sim.cpp: In member function ‘void Simulator::set_send_recieve()’:
+../HetNet_toc_Sim.cpp:1341:48: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Link*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+ 1341 |                     printf("Link_list.size(): %d\n", Link_list.size());
+      |                                               ~^     ~~~~~~~~~~~~~~~~
+      |                                                |                   |
+      |                                                int                 std::vector<Link*>::size_type {aka long unsigned int}
+      |                                               %ld
+../HetNet_toc_Sim.cpp:1361:48: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Link*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+ 1361 |                     printf("Link_list.size(): %d\n", Link_list.size());
+      |                                               ~^     ~~~~~~~~~~~~~~~~
+      |                                                |                   |
+      |                                                int                 std::vector<Link*>::size_type {aka long unsigned int}
+      |                                               %ld
+../HetNet_toc_Sim.cpp: In member function ‘void Simulator::move_file(std::vector<double>)’:
+../HetNet_toc_Sim.cpp:1384:38: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<UE*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+ 1384 |             if ((i % 2 == 0) && (i/2 < UE_list.size())){
+      |                                  ~~~~^~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp:1382:13: warning: unused variable ‘ind’ [-Wunused-variable]
+ 1382 |         int ind = time_step / 10;
+      |             ^~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::shadowing(BS*, UE*, int)’:
+../HetNet_toc_Sim.cpp:120:5: warning: control reaches end of non-void function [-Wreturn-type]
+  120 |     }
+      |     ^
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::capacity_calculation2()’:
+../HetNet_toc_Sim.cpp:489:26: warning: ‘bandwidth’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  489 |                 capacity = bandwidth * log2(1 + sinr); //!!!!!!!!!!!!!!!log2 kokodake
+      |                 ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::execute_sim_darwinian(std::vector<double>)’:
+../HetNet_toc_Sim.cpp:537:16: warning: ‘time_step’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  537 |         printf ("self.time_step: %d\n", time_step);
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_Sim.cpp: In member function ‘double Simulator::execute_sim_random(std::vector<double>)’:
+../HetNet_toc_Sim.cpp:1020:16: warning: ‘time_step’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+ 1020 |         printf ("self.time_step: %d\n", time_step);
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../HetNet_toc_Sim.cpp
+ 
+Building file: ../HetNet_toc_UE.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -ftest-coverage -fprofile-arcs -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_UE.d" -MT"HetNet_toc_UE.o" -o "HetNet_toc_UE.o" "../HetNet_toc_UE.cpp"
+../HetNet_toc_UE.cpp: In member function ‘double UE::get_TX_power()’:
+../HetNet_toc_UE.cpp:75:27: warning: variable ‘power’ set but not used [-Wunused-but-set-variable]
+   75 |         double tmp_power, power;
+      |                           ^~~~~
+../HetNet_toc_UE.cpp:86:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   86 |     }
+      |     ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::append_interf_dl(double)’:
+../HetNet_toc_UE.cpp:98:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   98 |     }
+      |     ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::cp_data_list()’:
+../HetNet_toc_UE.cpp:107:36: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  107 |         printf("data_list.size(): %d\n", data_list.size());
+      |                                   ~^     ~~~~~~~~~~~~~~~~
+      |                                    |                   |
+      |                                    int                 std::vector<Data*>::size_type {aka long unsigned int}
+      |                                   %ld
+../HetNet_toc_UE.cpp:108:41: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  108 |         printf("data_list_copy.size(): %d\n", data_list_copy.size());
+      |                                        ~^     ~~~~~~~~~~~~~~~~~~~~~
+      |                                         |                        |
+      |                                         int                      std::vector<Data*>::size_type {aka long unsigned int}
+      |                                        %ld
+../HetNet_toc_UE.cpp:111:5: warning: no return statement in function returning non-void [-Wreturn-type]
+  111 |     }
+      |     ^
+../HetNet_toc_UE.cpp: In member function ‘Link* UE::find_link(BS*, UE*, int)’:
+../HetNet_toc_UE.cpp:117:36: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Link*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  117 |         printf("Link_list.size(): %d\n", (*sim).Link_list.size());
+      |                                   ~^     ~~~~~~~~~~~~~~~~~~~~~~~
+      |                                    |                          |
+      |                                    int                        std::vector<Link*>::size_type {aka long unsigned int}
+      |                                   %ld
+../HetNet_toc_UE.cpp: In member function ‘double UE::send(int)’:
+../HetNet_toc_UE.cpp:304:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  304 | }
+      | ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::send_test(int)’:
+../HetNet_toc_UE.cpp:382:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  382 | }
+      | ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::recieve(int)’:
+../HetNet_toc_UE.cpp:398:35: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  398 |         printf("data_list.size():%d\n", data_list.size());
+      |                                  ~^     ~~~~~~~~~~~~~~~~
+      |                                   |                   |
+      |                                   int                 std::vector<Data*>::size_type {aka long unsigned int}
+      |                                  %ld
+../HetNet_toc_UE.cpp:459:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  459 | }
+      | ^
+../HetNet_toc_UE.cpp: In member function ‘double UE::recieve_test(int)’:
+../HetNet_toc_UE.cpp:475:35: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  475 |         printf("data_list.size():%d\n", data_list.size());
+      |                                  ~^     ~~~~~~~~~~~~~~~~
+      |                                   |                   |
+      |                                   int                 std::vector<Data*>::size_type {aka long unsigned int}
+      |                                  %ld
+../HetNet_toc_UE.cpp:528:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  528 | }
+      | ^
+../HetNet_toc_UE.cpp: In member function ‘BS* UE::find_BS(BS*)’:
+../HetNet_toc_UE.cpp:619:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<BS*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  619 |             for (int i=0; i<mbs_min_list.size(); i++){
+      |                           ~^~~~~~~~~~~~~~~~~~~~
+../HetNet_toc_UE.cpp: In member function ‘void UE::gen_random_data_ue(int)’:
+../HetNet_toc_UE.cpp:719:17: warning: unused variable ‘repeat_interval’ [-Wunused-variable]
+  719 |             int repeat_interval = 100;
+      |                 ^~~~~~~~~~~~~~~
+../HetNet_toc_UE.cpp:749:35: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<Data*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+  749 |         printf("data_list.size():%d, %d \n", data_list.size(), time_step);
+      |                                  ~^          ~~~~~~~~~~~~~~~~
+      |                                   |                        |
+      |                                   int                      std::vector<Data*>::size_type {aka long unsigned int}
+      |                                  %ld
+Finished building: ../HetNet_toc_UE.cpp
+ 
+Building file: ../HetNet_toc_func.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -ftest-coverage -fprofile-arcs -Wall -c -fmessage-length=0 -MMD -MP -MF"HetNet_toc_func.d" -MT"HetNet_toc_func.o" -o "HetNet_toc_func.o" "../HetNet_toc_func.cpp"
+Finished building: ../HetNet_toc_func.cpp
+ 
+Building file: ../darwinian_rbm_rap.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -ftest-coverage -fprofile-arcs -Wall -c -fmessage-length=0 -MMD -MP -MF"darwinian_rbm_rap.d" -MT"darwinian_rbm_rap.o" -o "darwinian_rbm_rap.o" "../darwinian_rbm_rap.cpp"
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::train_rbm(float*, int, int)’:
+../darwinian_rbm_rap.cpp:93:9: warning: unused variable ‘i’ [-Wunused-variable]
+   93 |     int i, j, k;
+      |         ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::continuousPattern(float*, int, int)’:
+../darwinian_rbm_rap.cpp:447:9: warning: unused variable ‘t’ [-Wunused-variable]
+  447 |  int i, t;
+      |         ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::trainNetworksRandom(int)’:
+../darwinian_rbm_rap.cpp:521:15: warning: unused variable ‘k’ [-Wunused-variable]
+  521 |  int d, i, j, k, l;
+      |               ^
+../darwinian_rbm_rap.cpp:521:18: warning: unused variable ‘l’ [-Wunused-variable]
+  521 |  int d, i, j, k, l;
+      |                  ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::setLandscape(int, int)’:
+../darwinian_rbm_rap.cpp:673:6: warning: unused variable ‘i’ [-Wunused-variable]
+  673 |  int i, j;
+      |      ^
+../darwinian_rbm_rap.cpp:673:9: warning: unused variable ‘j’ [-Wunused-variable]
+  673 |  int i, j;
+      |         ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::setNeighborDemes(int, int)’:
+../darwinian_rbm_rap.cpp:701:4: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  701 |    if(j > 0)   matrixNeighbors[p][c++] = pos[i-1][j-1];
+      |    ^~
+../darwinian_rbm_rap.cpp:702:16: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  702 |                matrixNeighbors[p][c++] = pos[i-1][j];
+      |                ^~~~~~~~~~~~~~~
+../darwinian_rbm_rap.cpp:708:4: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  708 |    if(j > 0)   matrixNeighbors[p][c++] = pos[i+1][j-1];
+      |    ^~
+../darwinian_rbm_rap.cpp:709:16: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  709 |                matrixNeighbors[p][c++] = pos[i+1][j];
+      |                ^~~~~~~~~~~~~~~
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::evolution_initialization(int)’:
+../darwinian_rbm_rap.cpp:718:19: warning: unused variable ‘k’ [-Wunused-variable]
+  718 |         int i, j, k, d, e = 0;
+      |                   ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::evolution_gen_environment(int)’:
+../darwinian_rbm_rap.cpp:765:21: warning: unused variable ‘j’ [-Wunused-variable]
+  765 |              int i, j, k, d, e = 0;
+      |                     ^
+../darwinian_rbm_rap.cpp:765:24: warning: unused variable ‘k’ [-Wunused-variable]
+  765 |              int i, j, k, d, e = 0;
+      |                        ^
+../darwinian_rbm_rap.cpp:765:30: warning: unused variable ‘e’ [-Wunused-variable]
+  765 |              int i, j, k, d, e = 0;
+      |                              ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::test_versatility(int)’:
+../darwinian_rbm_rap.cpp:822:30: warning: unused variable ‘e’ [-Wunused-variable]
+  822 |              int i, j, k, d, e = 0;
+      |                              ^
+../darwinian_rbm_rap.cpp: In member function ‘DEME* Darwinian_deme::evolution_gen_update(int)’:
+../darwinian_rbm_rap.cpp:869:24: warning: unused variable ‘k’ [-Wunused-variable]
+  869 |              int i, j, k, d, e = 0;
+      |                        ^
+../darwinian_rbm_rap.cpp:869:30: warning: unused variable ‘e’ [-Wunused-variable]
+  869 |              int i, j, k, d, e = 0;
+      |                              ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::evolution_gen_calcfitness(int)’:
+../darwinian_rbm_rap.cpp:932:24: warning: unused variable ‘k’ [-Wunused-variable]
+  932 |              int i, j, k, d, e = 0;
+      |                        ^
+../darwinian_rbm_rap.cpp:932:30: warning: unused variable ‘e’ [-Wunused-variable]
+  932 |              int i, j, k, d, e = 0;
+      |                              ^
+../darwinian_rbm_rap.cpp: In member function ‘float* Darwinian_deme::evolution_gen_calcbestfitness(int)’:
+../darwinian_rbm_rap.cpp:1028:52: warning: format ‘%f’ expects a matching ‘double’ argument [-Wformat=]
+ 1028 |    printf("darwinian: %d\t%f\t%f\t%f\t%d\t%d\t%f\t%f\t", t, bestW, avgW/(float)DN, worstW, deme[bestD].storedQ[bestP], deme[bestD].storedP[bestP], deme[bestD].storedD[bestP]);
+      |                                                   ~^
+      |                                                    |
+      |                                                    double
+../darwinian_rbm_rap.cpp:990:21: warning: unused variable ‘j’ [-Wunused-variable]
+  990 |              int i, j, k, d, e = 0;
+      |                     ^
+../darwinian_rbm_rap.cpp:990:24: warning: unused variable ‘k’ [-Wunused-variable]
+  990 |              int i, j, k, d, e = 0;
+      |                        ^
+../darwinian_rbm_rap.cpp:990:30: warning: unused variable ‘e’ [-Wunused-variable]
+  990 |              int i, j, k, d, e = 0;
+      |                              ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::evolution_gen_calcmutation(int)’:
+../darwinian_rbm_rap.cpp:1045:22: warning: unused variable ‘i’ [-Wunused-variable]
+ 1045 |                  int i, j, k, d, e = 0;
+      |                      ^
+../darwinian_rbm_rap.cpp:1045:25: warning: unused variable ‘j’ [-Wunused-variable]
+ 1045 |                  int i, j, k, d, e = 0;
+      |                         ^
+../darwinian_rbm_rap.cpp:1045:28: warning: unused variable ‘k’ [-Wunused-variable]
+ 1045 |                  int i, j, k, d, e = 0;
+      |                            ^
+../darwinian_rbm_rap.cpp:1045:34: warning: unused variable ‘e’ [-Wunused-variable]
+ 1045 |                  int i, j, k, d, e = 0;
+      |                                  ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::evolution_gen_replacemutation(int)’:
+../darwinian_rbm_rap.cpp:1065:25: warning: unused variable ‘j’ [-Wunused-variable]
+ 1065 |                  int i, j, k, d, e = 0;
+      |                         ^
+../darwinian_rbm_rap.cpp:1065:34: warning: unused variable ‘e’ [-Wunused-variable]
+ 1065 |                  int i, j, k, d, e = 0;
+      |                                  ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::evolution_gen_learnbest(int)’:
+../darwinian_rbm_rap.cpp:1101:25: warning: unused variable ‘j’ [-Wunused-variable]
+ 1101 |                  int i, j, k, d, e = 0;
+      |                         ^
+../darwinian_rbm_rap.cpp:1101:34: warning: unused variable ‘e’ [-Wunused-variable]
+ 1101 |                  int i, j, k, d, e = 0;
+      |                                  ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::evolution_gen_learnworst(int)’:
+../darwinian_rbm_rap.cpp:1135:25: warning: unused variable ‘j’ [-Wunused-variable]
+ 1135 |                  int i, j, k, d, e = 0;
+      |                         ^
+../darwinian_rbm_rap.cpp:1135:34: warning: unused variable ‘e’ [-Wunused-variable]
+ 1135 |                  int i, j, k, d, e = 0;
+      |                                  ^
+../darwinian_rbm_rap.cpp: In member function ‘DEME* Darwinian_deme::evolution_gen_selection(int)’:
+../darwinian_rbm_rap.cpp:1169:22: warning: unused variable ‘i’ [-Wunused-variable]
+ 1169 |                  int i, j, k, d, e = 0;
+      |                      ^
+../darwinian_rbm_rap.cpp:1169:25: warning: unused variable ‘j’ [-Wunused-variable]
+ 1169 |                  int i, j, k, d, e = 0;
+      |                         ^
+../darwinian_rbm_rap.cpp:1169:28: warning: unused variable ‘k’ [-Wunused-variable]
+ 1169 |                  int i, j, k, d, e = 0;
+      |                            ^
+../darwinian_rbm_rap.cpp:1169:34: warning: unused variable ‘e’ [-Wunused-variable]
+ 1169 |                  int i, j, k, d, e = 0;
+      |                                  ^
+../darwinian_rbm_rap.cpp: In member function ‘void Darwinian_deme::evolution()’:
+../darwinian_rbm_rap.cpp:1234:13: warning: unused variable ‘i’ [-Wunused-variable]
+ 1234 |         int i, j, k, d, e = 0;
+      |             ^
+../darwinian_rbm_rap.cpp:1234:16: warning: unused variable ‘j’ [-Wunused-variable]
+ 1234 |         int i, j, k, d, e = 0;
+      |                ^
+../darwinian_rbm_rap.cpp:1234:19: warning: unused variable ‘k’ [-Wunused-variable]
+ 1234 |         int i, j, k, d, e = 0;
+      |                   ^
+../darwinian_rbm_rap.cpp:1234:25: warning: unused variable ‘e’ [-Wunused-variable]
+ 1234 |         int i, j, k, d, e = 0;
+      |                         ^
+Finished building: ../darwinian_rbm_rap.cpp
+ 
+Building file: ../randomGenerator.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"randomGenerator.d" -MT"randomGenerator.o" -o "randomGenerator.o" "../randomGenerator.c"
+Finished building: ../randomGenerator.c
+ 
+Building target: code_c
+Invoking: GCC C++ Linker
+g++ -ftest-coverage -fprofile-arcs -o "code_c"  ./HetNet_toc.o ./HetNet_toc_BS.o ./HetNet_toc_Link.o ./HetNet_toc_Sim.o ./HetNet_toc_UE.o ./HetNet_toc_func.o ./darwinian_rbm_rap.o ./randomGenerator.o   
+Finished building target: code_c
+ 
+15:53:35 **** Incremental Build of configuration Debug for project code_c ****
+make all 
+make: Nothing to be done for 'all'.

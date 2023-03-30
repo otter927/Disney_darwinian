@@ -1,0 +1,57 @@
+#include <stdio.h>
+#include <string> 
+#include <cstring> 
+#include <cmath> 
+#include <vector>
+#include <list>
+#include <iostream>
+
+#include"HetNet_toc_BS.h"
+#include"HetNet_toc_UE.h"
+#include"HetNet_toc_Link.h"
+#include"HetNet_toc_Sim.h"
+#include"HetNet_toc_func.h"
+
+using namespace std;
+
+//class BS():
+//class MBS(BS):
+//class SBS(BS):
+//class UE():
+//class Link():
+//class Simulator():
+
+//class Simulator;
+
+
+int main()
+{
+    cout << "Here A!\n";
+
+
+    cout << "Here B!\n";
+
+    string BStype = "MBS";
+    BS bs1_r = BS(BStype, 0, 0, 1.0, 0.0, 0.0, 0);
+    BS *bs1 = &bs1_r;
+    BStype = "SBS";
+    BS bs2_r = BS(BStype, 1, 0, -1.0, 0.0, 0.0, 1);
+    BS *bs2 = &bs2_r;
+    string UEtype = "Ped";
+
+    //Simulator();
+    //Simulator sim_r;// = Simulator();
+    //Simulator *sim = &sim_r;
+
+    //UE ue1_r = UE(sim, UEtype, 0, 0, 0.0, 1.0, 0.0, bs1);
+    //UE *ue1 = &ue1_r;
+    
+    cout << "Here C!\n";
+
+    //Link link1_r = Link(sim, bs1, ue1, 0);
+    //Link *link1 = &link1_r;
+    
+    cout << "Here D!\n";
+    return 0;
+}
+

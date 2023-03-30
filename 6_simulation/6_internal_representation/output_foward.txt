@@ -1,0 +1,567 @@
+plot(4292.719500, -40576.091600, 'o')
+plot(4439.928800, -40645.357700, 'o')
+plot(4643.797700, -40811.665500, 'o')
+plot(4338.159400, -40895.025400, 'o')
+plot(4123.114200, -41033.804000, 'o')
+plot(4032.427400, -40784.228000, 'o')
+plot(4145.499500, -40479.087800, 'o')
+plot(4270.150300, -40728.646600, 'o')
+plot(4293.000000, -40576.000000, 'x')
+plot(4293.000000, -40576.000000, 'x')
+plot(4293.000000, -40576.000000, 'x')
+plot(4293.000000, -40576.000000, 'x')
+plot(4293.000000, -40576.000000, 'x')
+plot(4293.000000, -40576.000000, 'x')
+plot(4293.000000, -40576.000000, 'x')
+plot(4293.000000, -40576.000000, 'x')
+plot(4293.000000, -40576.000000, 'x')
+plot(4293.000000, -40576.000000, 'x')
+plot(4293.000000, -40576.000000, 'x')
+plot(4293.000000, -40576.000000, 'x')
+plot(4404.000000, -40628.000000, 'x')
+plot(4404.000000, -40628.000000, 'x')
+plot(4404.000000, -40628.000000, 'x')
+plot(4404.000000, -40628.000000, 'x')
+plot(4404.000000, -40628.000000, 'x')
+plot(4404.000000, -40628.000000, 'x')
+plot(4404.000000, -40628.000000, 'x')
+plot(4404.000000, -40628.000000, 'x')
+plot(4404.000000, -40628.000000, 'x')
+plot(4404.000000, -40628.000000, 'x')
+plot(4404.000000, -40628.000000, 'x')
+plot(4404.000000, -40628.000000, 'x')
+plot(4605.000000, -40803.000000, 'x')
+plot(4605.000000, -40803.000000, 'x')
+plot(4605.000000, -40803.000000, 'x')
+plot(4613.000000, -40786.000000, 'x')
+plot(4613.000000, -40786.000000, 'x')
+plot(4613.000000, -40786.000000, 'x')
+plot(4613.000000, -40786.000000, 'x')
+plot(4613.000000, -40786.000000, 'x')
+plot(4613.000000, -40786.000000, 'x')
+plot(4613.000000, -40786.000000, 'x')
+plot(4613.000000, -40786.000000, 'x')
+plot(4613.000000, -40786.000000, 'x')
+plot(4613.000000, -40786.000000, 'x')
+plot(4613.000000, -40786.000000, 'x')
+plot(4613.000000, -40786.000000, 'x')
+plot(4377.000000, -40885.000000, 'x')
+plot(4377.000000, -40885.000000, 'x')
+plot(4377.000000, -40885.000000, 'x')
+plot(4377.000000, -40885.000000, 'x')
+plot(4377.000000, -40885.000000, 'x')
+plot(4377.000000, -40885.000000, 'x')
+plot(4377.000000, -40885.000000, 'x')
+plot(4377.000000, -40885.000000, 'x')
+plot(4377.000000, -40885.000000, 'x')
+plot(4377.000000, -40885.000000, 'x')
+plot(4377.000000, -40885.000000, 'x')
+plot(4377.000000, -40885.000000, 'x')
+plot(4377.000000, -40885.000000, 'x')
+plot(4377.000000, -40885.000000, 'x')
+plot(4377.000000, -40885.000000, 'x')
+plot(4377.000000, -40885.000000, 'x')
+plot(4377.000000, -40885.000000, 'x')
+plot(4377.000000, -40885.000000, 'x')
+plot(4377.000000, -40885.000000, 'x')
+plot(4377.000000, -40885.000000, 'x')
+plot(4377.000000, -40885.000000, 'x')
+plot(4377.000000, -40885.000000, 'x')
+plot(4377.000000, -40885.000000, 'x')
+plot(4377.000000, -40885.000000, 'x')
+plot(4305.000000, -40917.000000, 'x')
+plot(4305.000000, -40917.000000, 'x')
+plot(4305.000000, -40917.000000, 'x')
+plot(4305.000000, -40917.000000, 'x')
+plot(4305.000000, -40917.000000, 'x')
+plot(4305.000000, -40917.000000, 'x')
+plot(4305.000000, -40917.000000, 'x')
+plot(4305.000000, -40917.000000, 'x')
+plot(4305.000000, -40917.000000, 'x')
+plot(4305.000000, -40917.000000, 'x')
+plot(4305.000000, -40917.000000, 'x')
+plot(4305.000000, -40917.000000, 'x')
+plot(4305.000000, -40917.000000, 'x')
+plot(4305.000000, -40917.000000, 'x')
+plot(4305.000000, -40917.000000, 'x')
+plot(4305.000000, -40917.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4157.000000, -41012.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4123.000000, -41034.000000, 'x')
+plot(4109.000000, -40996.000000, 'x')
+plot(4109.000000, -40996.000000, 'x')
+plot(4109.000000, -40996.000000, 'x')
+plot(4109.000000, -40996.000000, 'x')
+plot(4109.000000, -40996.000000, 'x')
+plot(4109.000000, -40996.000000, 'x')
+plot(4109.000000, -40996.000000, 'x')
+plot(4109.000000, -40996.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+plot(4046.000000, -40822.000000, 'x')
+self.time_step: 0
+flagistrue
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000
+self.time_step: 0
+flagistrue
+throughput_ul: 0.000000, 0.000000, 0.000000, throughput_dl: 0.000000, 0.000000, 0.000000, throughput_ul_mbs: 0.000000, 0.000000, 0.000000, throughput_dl_mbs: 0.000000, 0.000000, 0.000000, throughput_ul_sbs: 0.000000, 0.000000, 0.000000, throughput_dl_sbs: 0.000000, 0.000000, 0.000000

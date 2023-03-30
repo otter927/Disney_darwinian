@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include <string> 
+#include <cstring> 
+#include <cmath> 
+#include <vector>
+#include <list>
+
+#include"HetNet_toc_BS.h"
+#include"HetNet_toc_UE.h"
+#include"HetNet_toc_Link.h"
+#include"HetNet_toc_Sim.h"
+#include"HetNet_toc_func.h"
+
+using namespace std;
+
+//class BS():
+//class MBS(BS):
+//class SBS(BS):
+//class UE():
+//class Link():
+//class Simulator():
+
+//class Simulator;
+
+
+int main()
+{
+
+    //Simulator(void){
+    Simulator sim_r = Simulator();
+    Simulator *sim = &sim_r;
+
+    //BS(string BStype, int id_x, int cell_color, double x_pos, double y_pos, double z_pos, int cell_id){
+    //UE(Simulator *sim_x, string UEtype, int id_x, int cell_color_x, double x_pos, double y_pos, double z_pos, BS *bs_x);
+
+
+    string BStype = "MBS";
+    BS bs1_r = BS(BStype, 0, 0, 1.0, 0.0, 0.0, 0);
+    BS *bs1 = &bs1_r;
+    BStype = "SBS";
+    BS bs2_r = BS(BStype, 1, 0, -1.0, 0.0, 0.0, 1);
+    BS *bs2 = &bs2_r;
+    string UEtype = "Ped";
+    UE ue1_r = UE(sim, UEtype, 0, 0, 0.0, 1.0, 0.0, bs1);
+    UE *ue1 = &ue1_r;
+    
+
+    //Link(Simulator sim_x, BS lbs, UE lue, int direction_x){
+
+    Link link1_r = Link(sim, bs1, ue1, 0);
+    Link *link1 = &link1_r;    
+    
+    return 0;
+}
+
+

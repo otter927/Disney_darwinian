@@ -1,0 +1,123 @@
+import tensorflow as tf
+import numpy as np
+#import matplotlib.pyplot as plt
+#import pandas as pd
+#from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Embedding, TimeDistributed, Dense, SimpleRNN, Activation
+#from pprint import pprint
+import sys
+
+args = sys.argv
+
+def loss_fn(model, x, y):
+    #print(y);
+    #print(model(x));
+    sequence_loss = tf.keras.losses.mean_squared_error(
+#    sequence_loss = tf.keras.losses.binary_crossentropy(
+        y_true=y, y_pred=model(x)
+    )
+    return sequence_loss
+
+
+
+def tdd_learn(args1):
+
+    model = tf.keras.models.load_model("keras_rnn_tdd"+str(args1));
+
+
+    text_input = np.loadtxt("learning_input.txt");
+    print("text_input.shape")
+    print(text_input.shape)
+    #learning_input = text_input.reshape(100,4,16);
+    #learning_input = text_input.reshape(100,40,16);
+    learning_input_tmp = text_input.reshape(text_input.shape[0],180,80);
+    print("learning_input_tmp.shape")
+    print(learning_input_tmp.shape)
+    if (text_input.shape[0] > 750):
+        learning_input = learning_input_tmp[-750:,:,:]
+    else:
+        learning_input = learning_input_tmp
+    print("learning_input.shape")
+    print(learning_input.shape)
+    X = learning_input.tolist();
+
+
+    learning_output_tmp = np.loadtxt("learning_output"+str(args1)+".txt");
+    print("learning_output_tmp.shape")
+    print(learning_output_tmp.shape)
+    if (text_input.shape[0] > 750):
+        learning_output = learning_output_tmp[-750:,:]
+    else:
+        learning_output = learning_output_tmp
+    print("learning_output.shape")
+    print(learning_output.shape)
+    y = learning_output.tolist();
+
+
+    train_ds = tf.data.Dataset.from_tensor_slices((X, y)).shuffle(buffer_size=64640).batch(batch_size=50)
+
+    #print(train_ds)
+
+
+    model = Sequential([
+    #    Embedding(input_dim=input_dim, output_dim=output_dim,
+    #              mask_zero=True, trainable=False, input_length=10,
+    #              embeddings_initializer=tf.keras.initializers.random_normal()),
+    #    SimpleRNN(units=16, input_shape=(4, 16), return_sequences=True),
+    #    SimpleRNN(units=16, activation="tanh", input_shape=(4, 16)), #sigmoid #tanh!!!
+        SimpleRNN(units=80, activation="tanh", input_shape=(180, 80)), #sigmoid #tanh!!!
+    #    TimeDistributed(Dense(units=16, activation='softmax'))
+    #    TimeDistributed(Activation('tanh'))
+    #    TimeDistributed(Activation('tanh'))
+    ])
+
+    model.summary()
+
+
+    optimizer = tf.keras.optimizers.Adam(learning_rate=0.01, clipvalue = 0.5)
+
+
+
+    tr_loss_hist = []
+
+    #for e in range(10): #2 #52
+    for e in range(4): #2 #52
+        avg_tr_loss = 0
+        tr_step = 0
+        
+        for x_mb, y_mb in train_ds:
+            #print(x_mb)
+            #print(y_mb)
+            #y_test=model(x_mb)
+            #print(y_test)
+    
+            with tf.GradientTape() as tape:
+                tr_loss = loss_fn(model, x_mb, y_mb)
+                print("tr_loss:"+str(tr_loss.numpy()))
+            grads = tape.gradient(tr_loss, model.trainable_variables)
+            optimizer.apply_gradients(grads_and_vars=zip(grads, model.trainable_variables))
+            avg_tr_loss += tr_loss
+            tr_step += 1
+        avg_tr_loss /= tr_step
+        tr_loss_hist.append(avg_tr_loss)
+   
+    #    if (e + 1) % 5 == 0:
+    #        print(str(e)+":"+str(avg_tr_loss));
+
+    #print("loss: "+str(avg_tr_loss));
+
+
+    #y_pred = model.predict(X)
+
+    #print(y_pred)
+
+
+    model.save("keras_rnn_tdd"+str(args1))
+
+    #y_pred_pos = list(map(lambda row: [idx2pos.get(elm) for elm in row], y_pred.astype(np.int32).tolist()))
+
+
+
+
+

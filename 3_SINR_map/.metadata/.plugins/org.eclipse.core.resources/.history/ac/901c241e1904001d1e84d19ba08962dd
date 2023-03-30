@@ -1,0 +1,682 @@
+#include <stdio.h>
+#include <string> 
+#include <cstring> 
+#include <cmath> 
+#include <vector>
+#include <list>
+
+#include"HetNet_toc_BS.h"
+#include"HetNet_toc_UE.h"
+#include"HetNet_toc_Link.h"
+#include"HetNet_toc_Sim.h"
+#include"HetNet_toc_func.h"
+
+#include "darwinian_rbm_rap.h"
+
+
+using namespace std;
+
+//class BS():
+//class MBS(BS):
+//class SBS(BS):
+//class UE():
+//class Link():
+//class Simulator():
+
+//class Simulator;
+
+
+    
+Simulator::Simulator(){
+        arrival_rate = 0.1;
+    
+    }
+    
+double Simulator::path_loss(BS *lbs, UE *lue, int direction){ //3GPP, LOS, d in km
+        double d, ans;
+        string s_t, r_t;
+
+        d = calc_d((*lbs).get_xyz(), (*lue).get_xyz()) / 1000;
+
+        if (d<= 0.01){
+            d = 0.01;
+        }
+        printf("d2: %lf", d);
+        
+       
+        if ((*lbs).get_type() == "MBS"){
+            ans = 103.4+24.2 * log10(d);
+            //#ans = 131.1+42.8 * log10(d) #NLOS
+        } else if ((*lbs).get_type() == "SBS"){
+            //#print("SBS-UE")
+            ans = 103.8 + 20.9 * log10(d);
+            //#ans = 145.4+37.5 * log10(d) #NLOS
+        }
+                
+        return ans;
+    }
+    
+    
+double Simulator::shadowing(BS *lbs, UE *lue, int direction){
+        int shadowing_MBS_MBS = 8; //#dB
+        int shadowing_UE_MBS = 8;
+        int shadowing_SBS_UE = 10;
+        int shadowing_UE_UE = 12;
+        int shadowing_MBS_SBS = 6;
+        int shadowing_SBS_SBS = 6;
+
+        if ((*lbs).get_type() == "MBS"){
+            return shadowing_UE_MBS;
+            }
+        if ((*lbs).get_type() == "SBS"){
+            return shadowing_SBS_UE;
+            }
+    }
+
+
+double Simulator::signal(BS *lbs, UE *lue, int direction){
+
+        double ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans;
+
+        if (direction == 0){ //UL:0, DL:1
+            ans1 = (*lue).get_TX_power();
+            ans2 = (*lbs).get_antenna_gain();
+            ans6 = (*lue).get_antenna_gain();
+            ans5 = (*lbs).get_noise_figure();
+            ans7 = (*lue).get_noise_figure();
+            ans4 = shadowing(lbs, lue, direction);
+            ans3 = path_loss(lbs, lue, direction);       
+        }else{
+            ans1 = (*lbs).get_TX_power();
+            ans2 = (*lue).get_antenna_gain();
+            ans6 = (*lbs).get_antenna_gain();
+            ans5 = (*lue).get_noise_figure();
+            ans7 = (*lbs).get_noise_figure();
+            ans4 = shadowing(lbs, lue, direction);
+            ans3 = path_loss(lbs, lue, direction);        
+        }
+
+        
+        printf("TX_power: %lf", ans1);
+        printf("antenna gain db: %lf", ans2);
+        printf("antenna gain w %lf:", d2w(ans2));
+        printf("path loss db %lf:", ans3);
+        printf("path loss w %lf:", d2w(ans3));
+        printf("shadowing db %lf:", ans4);
+        printf("shadowing w %lf:", d2w(ans4));
+        printf("noise figure %lf:", ans5);
+
+        ans = ans1 + ans2 + ans6 - ans5 - ans7 - ans4 - ans3;
+        //#print(str(s.get_name())+","+str(d.get_name())+", power, gain, noise, pathl, shad, signal, dis:"+str(ans1)+","+str(ans2)+","+str(ans5)+","+str(ans4)+","+str(ans3)+","+str(ans)+","+str(calc_d(s.get_xyz(), d.get_xyz())))
+        //#print("signal db:" + str(ans))
+        //#ans = s.get_TX_power() * d2w(s.get_antenna_gain()) * d2w(self.path_loss(s, d)) * d2w(self.shadowing(s, d))
+        //#http://www.rf-world.jp/bn/RFW09/samples/p013-014.pdf
+        //#http://www.mobile.ecei.tohoku.ac.jp/lecture/wireless/wireless_05.pdf
+        //#if string == "interf":
+        //#print(string+":"+str(ans1)+","+str(ans2)+","+str(ans6)+",,"+str(ans5)+","+str(ans7)+","+str(ans4)+","+str(ans3)+","+str(ans)+","+str(calc_d(s.get_xyz(), d.get_xyz())))
+        //#print(string+":"+str(ans))
+        
+
+        
+        return d2w(ans), ans;
+        
+    }      
+
+        
+
+double Simulator::capacity_calculation(){
+
+
+        //#3GPP
+        
+//#        signal(sender, reciever) = sender.get_TX_power() * d2w(sender.get_antenna_gain()) * d2w(path_loss(sender, reciever) * d2w(shadowing(sender, reciever))
+     
+//#        sinr_upper = signal(s1, r1)
+        
+//#        interf = 0
+//#        for s in all_signals:
+//#            interf += signal(s, r1)
+
+//#        sinr_bottom = interf + d2w(reciever.noise(r1))
+
+        //#http://www.mobile.ecei.tohoku.ac.jp/intro/pdf/07_digital.pdf
+        
+        //#need signal list up
+        
+        //#round robin
+        //#proportional fairness
+        
+        //#lambda poassion?
+        //#UPT
+
+        //######
+
+        double noise_floor = -108;  //#dBm    #Presentation of Specification to TSG or WG - 3GPP
+        int i;
+        int num_SINR = 0;
+        double sinr_upper, sinr_upper_db, interf_tmp, interf_tmp_db;
+        double interf, interf_db;
+        list<BS *> interf_bs_list;
+        list<int> interf_bs_cell_list;
+        double noise_tmp_db, noise_tmp;
+        double sinr_bottom, sinr_bottom_db, sinr, sinr_db;
+        double capacity, bandwidth;
+                
+         for (Link *i : Link_list) {        
+         //for (i = 1; i <= sizeof(self.Link_list) / sizeof(self.Link_list[0]); i++){
+            //#print("Link_list:"+str(i.get_s().get_name())+", "+str(i.get_d().get_name())+", "+str(i.is_active()))
+            if ((*i).is_active() == true){
+                sinr_upper, sinr_upper_db = signal((*i).get_bs(), (*i).get_ue(), (*i).get_direction());
+                //#print("tmp:"+str(w2d(sinr_upper))+", "+str(sinr_upper_db))
+
+                //#print("i:"+str(i.get_s().get_name())+", "+str(i.get_d().get_name())+", "+str(sinr_upper_db))
+                interf = 0;
+                interf_db = 0;
+                interf_bs_list.push_back((*i).get_bs());
+                interf_bs_cell_list.push_back((*(*i).get_bs()).get_cell_id());
+                for (Link *j : Link_list) {        
+                    //#if (j != i) and (j.is_active() == True) and (j.get_bs().get_cell_id() != i.get_bs().get_cell_id()) and (j.get_bs() not in interf_bs_list): #???
+                    //#if (j != i) and (j.is_active() == True) and (j.get_bs().get_cell_id() != i.get_bs().get_cell_id()): #???
+                    bool flag_bs = false;
+                    for (BS *k1 : interf_bs_list){
+                        BS *k2 = (*j).get_bs();
+                        if (k1 == k2){
+                            flag_bs = true;
+                        }
+                    }
+                    
+                    bool flag_id = false;
+                    for (int k1 : interf_bs_cell_list){
+                        int k2 = (*(*j).get_bs()).get_cell_id();
+                        if (k1 == k2){
+                            flag_id = true;
+                        }
+                    }
+
+                    if ((j != i) && ((*j).is_active() == true) && flag_bs && flag_id ){ //#???
+                        interf_tmp, interf_tmp_db = signal((*i).get_bs(), (*i).get_ue(), (*i).get_direction());
+                        //#print("j:"+str(j.get_s().get_name())+", "+str(j.get_d().get_name())+", "+str(interf_tmp_db))
+                        interf += interf_tmp;
+                        if (interf_db == 0){
+                            interf_db = interf_tmp_db;
+                        } else {
+                            interf_db = dsum(interf_db, interf_tmp_db);
+                        }
+                        interf_bs_list.push_back((*j).get_bs());
+                        interf_bs_cell_list.push_back((*(*j).get_bs()).get_cell_id());
+                        
+                    }
+                }
+
+                (*(*i).get_ue()).append_interf_dl(interf);
+
+                //#print("sinr_upper:"+str(sinr_upper))
+                //#print("sinr_interf:"+str(interf))
+                //#noise_tmp_db = noise_floor + i.get_d().get_noise_figure()
+                noise_tmp_db = noise_floor;
+                //#print("noise_tmp1:"+str(noise_tmp1))   
+                //#print("noise_tmp2:"+str(d2w(noise_tmp1)))       
+                //#noise_tmp = math.pow(d2w(noise_tmp1), 2)
+                noise_tmp = d2w(noise_tmp_db);
+                //#print("noise_tmp:"+str(noise_tmp))
+                sinr_bottom = interf + noise_tmp;
+                if (interf_db == 0) {
+                    sinr_bottom_db = noise_tmp_db;
+                } else {
+                    sinr_bottom_db = dsum(interf_db, noise_tmp_db);
+                }
+                sinr = sinr_upper / sinr_bottom;
+                sinr_db = sinr_upper_db - sinr_bottom_db;
+                //#print("SINR db:"+str(i.get_s().get_name())+", "+str(i.get_d().get_name())+", "+str(w2d(sinr_upper))+", "+str(w2d(sinr_bottom))+", "+str(w2d(sinr))+", "+str(sinr_upper_db)+", "+str(sinr_bottom_db)+", "+str(sinr_db))
+                //#print("SINR db:"+str(i.get_s().get_type())+", "+str(i.get_d().get_type())+", "+str(w2d(sinr_upper))+", "+str(w2d(sinr_bottom))+", "+str(w2d(sinr)))
+                //#print("SINR db:"+str(i.get_s().get_type())+", "+str(i.get_d().get_type())+", "+str(w2d(sinr))+", "+str(self.time_step))
+                //##print("SINR db:"+str(i.get_s().get_name())+", "+str(i.get_d().get_name())+", "+str(w2d(sinr))+", "+str(self.time_step))
+                //#print("")
+
+                num_SINR = num_SINR + 1;
+                
+                capacity = bandwidth * log2(1 + sinr); //!!!!!!!!!!!!!!!log2 kokodake
+
+                capacity = 0.01 * 0.1 * capacity; //#10ms 1subframe
+                
+                capacity = capacity * 100; //####set 1 timestep -> 1s
+                //##print("capacity:"+str(capacity))
+                
+                (*i).set_capacity(capacity);
+            } else {
+                (*i).set_capacity(0);
+            }
+            
+        //##print("num_SINR:"+str(self.time_slot)+", "+str(num_SINR))
+        
+        }
+    }            
+
+
+double Simulator::execute_sim_darwinian(double position_list[][100]){
+
+        //#BS
+        //#action,
+        //#send
+        //#recieve,
+        //#move
+        //#setting,
+        //#observation, reward
+
+        int time_step, time_slot;
+        double reward;
+        Darwinian_deme cDeme;
+        DEME *deme_list;
+
+        printf ("self.time_step: %d", time_step);
+        
+
+        //printf("bs");
+        //for (BS bs : BS_list){
+        //    printf(str(bs.get_xyz()))
+        //}
+
+        //print("ue")
+        //for ue in self.UE_list:
+        //    print(str(ue.get_xyz()))
+        //print("ue_end")
+
+        if (time_step == 0){
+            cDeme.evolution_initialization(time_step);
+            cDeme.evolution_gen_environment(time_step);
+            deme_list = cDeme.evolution_gen_update(time_step);
+        }else{
+            cDeme.evolution_gen_environment(time_step);
+            deme_list = cDeme.evolution_gen_update(time_step);
+        }
+
+        float w[NN];
+        float v[N];
+        pair<double, double> ans;        
+        for (int n=0; n< NN; n++){
+        //for o_env, output in enumerate(deme_list):
+            //printf("output:"+str(output))
+
+            for (UE *ue : UE_list){
+                (*ue).cp_data_list();
+            }
+            
+            //#send_recieve
+            for (int j=0; j< 10; j++){
+                time_slot = j % 10;
+                
+                for (BS *bs : BS_list){
+                    //#print("output2:"+str(output))
+                    for (int i=0; i<N; i++){
+                        v[i] = deme_list[0].output[n][i];
+                    }
+                    (*bs).sim_set_state_darwinian_quad(v, time_slot);
+                    //#for i in self.BS_list:
+                    //#    i.set_state(self.time_slot)
+                }
+
+                capacity_calculation(); 
+
+                for (UE *ue: UE_list){
+                    (*ue).recieve_test(time_slot);
+                }
+                //#print(str(self.time_slot) + ": recieve")
+            
+                for (UE *ue: UE_list){
+                    (*ue).send_test(time_slot);
+                }
+                //#print(str(self.time_slot) + ": send")
+            }
+            
+            
+            reward = 0;
+            for (BS *bs: BS_list){
+                ans = (*bs).get_bs_sentdata_total();
+                reward = reward + ans.first;
+                reward = reward + ans.second;
+            }
+            //print("reward\t:"+str(reward)+", "+str(output))
+                
+            //#ans1_1, ans1_2 = bs.get_bs_sentdata_total()
+            //#print("ans1_1:"+str(ans1_1)+"ans1_2:"+str(ans1_2))
+            //#if (ans1_1 != 0) and (ans1_2 != 0):
+            //#    reward = ans1_1 * ans1_2 #ulmax, dlmax
+            //#elif (ans1_1 != 0):
+            //#    reward = ans1_1
+            //#elif (ans1_2 != 0):
+            //#    reward = ans1_2
+            //#else:
+            //#    reward = 0
+            
+            w[n] = reward;
+        }
+        
+        //print("w1:"+str(w))
+        cDeme.return_fitness(w, 0);
+            
+        float *best_output = cDeme.evolution_gen_calcbestfitness(time_slot);
+        //self.sim_darwinian_learning(self.time_slot)############!!!!!!!
+        //print("best_output:"+str(self.best_output))
+
+        deme_list = cDeme.evolution_gen_selection(time_slot);
+
+        for (int n=0; n< 2; n++){
+        //for o_env, output in enumerate([deme_list[0], deme_list[1]]):
+        
+            for (UE *ue : UE_list){
+                (*ue).cp_data_list();
+            }
+
+            //#send_recieve
+            for (int j=0; j<10; j++){
+                time_slot = j % 10;
+            
+                for (BS *bs : BS_list){
+                    if (n==0){
+                        (*bs).sim_set_state_darwinian_quad(deme_list[0].v1, time_slot);
+                    }else{
+                        (*bs).sim_set_state_darwinian_quad(deme_list[0].v2, time_slot);                    
+                    }
+                    //#for i in self.BS_list:
+                    //#    i.set_state(self.time_slot)
+                }
+                
+                capacity_calculation();        
+
+                for (UE *ue : UE_list){
+                    (*ue).recieve_test(time_slot);
+                }
+                
+                for (UE *ue : UE_list){
+                    (*ue).send_test(time_slot);
+                }
+            }
+
+            reward = 0;
+            for (BS *bs : BS_list){
+                ans = (*bs).get_bs_sentdata_total();
+                reward = reward + ans.first;
+                reward = reward + ans.second;
+            }
+            //print("reward\t:"+str(reward)+", "+str(output))
+
+            //#ans1_1, ans1_2 = bs.get_bs_sentdata_total()
+            //#if (ans1_1 != 0) and (ans1_2 != 0):
+            //#    reward = ans1_1 * ans1_2 #ulmax, dlmax
+            //#elif (ans1_1 != 0):
+            //#    reward = ans1_1
+            //#elif (ans1_2 != 0):
+            //#    reward = ans1_2
+            //#else:
+            //#    reward = 0
+            
+            w[n] = reward;
+        }
+        
+        cDeme.return_fitness_mutate(w, 0);
+
+        cDeme.evolution_gen_replacemutation(time_slot);
+        //#cDeme.evolution_gen_learnbest(time_slot);
+        //#cDeme.evolution_gen_learnworst(time_slot);
+        
+        for (int j=1; j< 10; j++){
+            time_slot = time_step % 10;
+
+
+            for (BS *bs : BS_list){
+                (*bs).sim_set_state_darwinian_quad(best_output, time_slot);
+            }                    
+
+            capacity_calculation();        
+
+            for (UE *ue : UE_list){
+                (*ue).recieve(time_slot);
+            }
+            
+            for (UE *ue : UE_list){
+                (*ue).send(time_slot);
+            }
+            
+            time_step = time_step + 1;
+        }
+
+        for (UE *ue : UE_list){
+            (*ue).clear_links_ul();
+            (*ue).clear_links_dl();
+        }
+        
+        reward = 0;
+        for (BS *bs : BS_list){
+            ans = (*bs).get_bs_sentdata_total();
+            //#print("reward:"+str(bs.get_name())+"ans1_1:"+str(ans1_1)+"ans1_2:"+str(ans1_2))
+            reward = reward + ans.first;
+            reward = reward + ans.second;
+        }
+        //print("finalreward:\t"+str(reward)+", "+str(self.best_output))
+
+        //#move xy
+        //#print("len UE_list:"+str(len(self.UE_list)))
+        move_file(position_list);  //#stop move
+        for (UE *ue : UE_list){
+            (*ue).renew_time_stamp();
+        }
+
+        //#move change bs
+        if (true){
+
+            BS *old_bs;
+            BS *new_bs;
+            
+            for (UE *ue : UE_list){
+                old_bs = (*ue).get_inside_BS();
+                new_bs = (*ue).find_BS(old_bs);
+                //#print("new_BS:"+str(new_bs.get_name())+", "+str(i.get_name())+", "+str(self.time_step))
+
+                if (old_bs != new_bs){
+                    (*ue).set_connecting_BS(new_bs);
+                    (*ue).set_inside_BS(new_bs);
+    
+                    (*old_bs).remove_inside_UE(ue);
+    
+                    vector<UE *> UE_tmp = (*old_bs).get_connecting_UE_ul();
+                    bool UE_bool = false;
+                    for(auto iter = UE_tmp.begin(); iter != UE_tmp.end(); ++iter){
+                        if((*(*iter)).id == (*ue).id){
+                            UE_bool = true;
+                        }
+                    }
+                    
+                    if (UE_bool){
+                        (*old_bs).remove_connecting_UE_ul(ue);
+                        bool conn = (*new_bs).set_connecting_UE_ul(ue);
+                        //#print("connect:"+str(conn))
+                        int j_env = 0;
+                        for (Link *j : Link_list){
+                            if (((*j).get_ue() == ue) && ((*j).get_bs() == old_bs) && ((*j).get_direction() == 0)){
+                                if (conn == true){
+                                    (*Link_list[j_env]).change_bs(new_bs);
+                                }else{
+                                    Link_list.erase (Link_list.begin() + j_env);
+                                    //Link_list.pop(j_env);
+                                }
+                            }
+                            j_env = j_env + 1;
+                        }
+                    }
+                    
+                    UE_tmp = (*old_bs).get_connecting_UE_dl();
+                    UE_bool = false;
+                    for(auto iter = UE_tmp.begin(); iter != UE_tmp.end(); ++iter){
+                        if((*(*iter)).id == (*ue).id){
+                            UE_bool = true;
+                        }
+                    }
+                    if (UE_bool){
+                        (*old_bs).remove_connecting_UE_dl(ue);
+                        bool conn = (*new_bs).set_connecting_UE_dl(ue);
+                        //#print("connect:"+str(conn))
+                        int j_env = 0;
+                        for (Link *j : Link_list){
+                            if (((*j).get_bs() == old_bs) && ((*j).get_ue() == ue) && ((*j).get_direction() == 1)){
+                                if (conn == true){
+                                    (*Link_list[j_env]).change_bs(new_bs);
+                                }else{
+                                    Link_list.erase (Link_list.begin() + j_env);
+                                    //self.Link_list.pop(j_env);
+                                }
+                            }
+                            j_env = j_env + 1;
+                        }
+                    }
+                    
+                    (*new_bs).set_inside_UE(ue);
+                    //#print("lendatalist:")
+                    int env_t = 0;
+                    for (Data data : (*ue).data_list){
+                    //for env_t, (tbs, _, _, _, _, _) in enumerate(i.data_list):
+                        if (data.bs == old_bs){
+                            (*ue).data_list[env_t].bs = new_bs;
+                        }
+                        env_t = env_t + 1;
+                    }
+                }
+                                            
+            }
+
+        }
+        
+        
+        //# gen new data
+        for (UE *ue : UE_list){    
+            (*ue).gen_random_data_ue(time_step / 10);  //#gen random data
+        }
+        
+        //#set connecting_UE     
+        set_send_recieve();
+
+        for (BS *bs : BS_list){
+            //#print("connecting_UE:"+str(len(i.get_connecting_UE_ul()))+", "+str(len(i.get_connecting_UE_dl()))+", "+str(i.get_name()))
+            (*bs).set_c_connecting_UE();
+        }
+
+                
+    }
+
+
+void Simulator::del_link_ul(Link *x){
+    
+        //#print("del_link:"+str(x.get_s().get_name())+", "+str(x.get_d().get_name()))
+        
+        //#for i in self.Link_list:
+        //#    print("Link_list:"+str(i.get_s().get_name())+", "+str(i.get_d().get_name()))
+            
+    
+        (*(*x).get_bs()).remove_connecting_UE_ul((*x).get_ue());
+        bool exist = false;
+        for (Link *i : Link_list){
+            if ((i != x) && ((*i).get_bs() == (*x).get_bs()) && ((*i).get_ue() == (*x).get_ue())){
+                exist = true;
+            }
+        }
+        if (exist == false){
+            //#print("remove ul")
+            (*(*x).get_ue()).remove_connecting_BS();
+        }
+        //#    print("del_link:"+str(x.get_bs().get_name())+","+str(x.get_bs().get_connecting_UE_name()))
+            
+        for(auto iter = Link_list.begin(); iter != Link_list.end(); ++iter){
+            if((*(*iter)).id == (*x).id){
+                iter = Link_list.erase(iter);
+                break;
+            }
+        }
+
+}
+
+void Simulator::del_link_dl(Link *x){
+    
+        //#print("del_link:"+str(x.get_s().get_name())+", "+str(x.get_d().get_name()))
+        
+        //#for i in self.Link_list:
+        //#    print("Link_list:"+str(i.get_s().get_name())+", "+str(i.get_d().get_name()))
+            
+    
+        (*(*x).get_bs()).remove_connecting_UE_dl((*x).get_ue());
+        bool exist = false;
+        for (Link *i : Link_list){
+            if ((i != x) && ((*i).get_bs() == (*x).get_bs()) && ((*i).get_ue() == (*x).get_ue())){
+                exist = true;
+            }
+        }
+        if (exist == false){
+            //#print("remove dl")
+            (*(*x).get_ue()).remove_connecting_BS();
+        }
+        //#    print("del_link:"+str(x.get_bs().get_name())+","+str(x.get_bs().get_connecting_UE_name()))
+            
+        for(auto iter = Link_list.begin(); iter != Link_list.end(); ++iter){
+            if((*(*iter)).id == (*x).id){
+                iter = Link_list.erase(iter);
+                break;
+            }
+        }
+
+}
+
+
+
+void Simulator::set_send_recieve(){
+    
+        vector<Data> data_list;
+    
+        for (UE *i : UE_list){
+            data_list = (*i).get_data_list();
+            //##print(str(i.get_name())+", "+str(len(data_list)))
+            for (Data d : data_list){
+                if (d.send_begin == 1){
+                    if (d.direction == 0){
+                        (*i).gen_link(d.bs, i, 0);
+                    }
+                    if (d.direction == 1){
+                        (*i).gen_link(d.bs, i, 1);
+                    }
+                }
+            }
+        }
+        
+        for (UE *i : UE_list){
+            data_list = (*i).get_data_list();
+            //##print(str(i.get_name())+", "+str(len(data_list)))
+            for (Data d : data_list){
+                if (d.send_begin == 0){
+                    if (d.direction == 0){
+                        (*i).gen_link(d.bs, i, 0);
+                    }
+                    if (d.direction == 1){
+                        (*i).gen_link(d.bs, i, 1);
+                    }
+                }
+            }
+        }
+}
+
+void Simulator::add_link(Link *x){
+        Link_list.push_back(x);
+        //#print("add_link:"+str(x.get_s().get_name())+", "+str(x.get_d().get_name()))
+}
+
+
+void Simulator::move_file(double position_list[][100]){
+        //print("move_step:"+str(self.time_step//10))
+        int ind = time_step / 10;
+        for (int i=0; i< 100; i++){
+            if ((i % 2 == 0) && (i/2 < UE_list.size())){
+                //##print("i_env:"+str(i_env))
+                (*UE_list[i / 2]).set_xaxis(position_list[ind][i]);
+                (*UE_list[i / 2]).set_yaxis(position_list[ind][i+1]);
+            }
+        }
+}
+
+
+

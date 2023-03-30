@@ -1,0 +1,208 @@
+#ifndef __CLANG_SAMPLE_H__
+#define __CLANG_SAMPLE_H__
+
+#include <iostream>
+#include <vector>
+//#include "cppflow/cppflow.h"
+using namespace std;
+
+//#define N           16//38//20 //10  // number of neurons (200) // if Nk landscape is used, the maximal value of N is 63!
+//#define P           10   // partition size; must be an integer that divides N (only if blockFitness is used)
+#define T           2   // number of optima per block (only if blockFitness is used)
+//#define B       	  N/P // number of blocks per sequence (only if blockFitness is used)
+//#define NN       2//10 100      // population size of a deme (number of networks)
+//#define DX       1       // 1st dimension of spatial deme lattice
+//#define DY       1       // 2nd dimension of spatial deme lattice
+//#define DN       1 // total deme number
+#define STOREMAX      1000    // maximal number of stored patterns per network; only used for tracking 
+//#define ENVNUM     2       // number of different environments to cycle through (use ENVNUM = 1 and ENVLEN > MAXT for stable environment; ENVNUM = 0 won't work; Note, that if ENVNUM > 1, global optimum is set accordingly!)
+#define TYPE 4 // type of operator to turn input to output
+#define STORETEST     1    // test storedness of output (only used if TYPE == 4; otherwise sometimes it is automatically on)
+
+#define n_v 80//16//38//20 //10 //N
+#define n_h 80//16//38//20 //10 //N
+#define epsilon_rbm 0.1
+#define epoch_rbm 400
+#define T_rbm 5
+
+
+typedef struct DEME {
+
+    float minW, maxW, avgW, wworstW;
+    int   minP, maxP;
+    float w1, w2;
+    int recombination;
+
+    vector<float> v1, v2, maxOutput;
+
+    vector<float> w;
+    vector<vector<float>> input_t;
+    vector<vector<float>> output;
+    vector<vector<float>> test;
+    vector<vector<vector<float>>> weight;
+    vector<vector<float>> versatility;
+    vector<int> storedQ, storedP;
+    vector<float> storedD;
+    vector<vector<vector<float>>> stored;
+    vector<float> wworstoutput;
+    vector<vector<vector<float>>> weight_rbm;
+    vector<vector<float>> b_rbm;
+    vector<vector<float>> a_rbm;
+
+
+    DEME(int NN) {
+
+      int N = 80;//16;
+
+       v1.resize(N);
+       v2.resize(N);
+       maxOutput.resize(N);
+
+       w.resize(NN);
+       input_t.resize(NN, vector<float>(N));
+       output.resize(NN, vector<float>(N));
+       test.resize(NN, vector<float>(N));
+       weight.resize(NN, vector<vector<float>>(N, vector<float>(N)));
+       versatility.resize(NN*NN, vector<float>(N));
+       storedQ.resize(NN);
+       storedP.resize(NN);
+       storedD.resize(NN);
+       stored.resize(NN, vector<vector<float>>(STOREMAX, vector<float>(N)));
+       wworstoutput.resize(NN);
+       weight_rbm.resize(NN, vector<vector<float>>(n_h, vector<float>(n_v)));
+       b_rbm.resize(NN, vector<float>(n_h));
+       a_rbm.resize(NN, vector<float>(n_v)); 
+    }
+
+
+
+    
+//    vector<float> w(NN);
+//    vector<vector<float>> input_t(NN, vector<float>(N));
+//    vector<vector<float>> output(NN, vector<float>(N));
+//    vector<vector<float>> test(NN, vector<float>(N));
+//    vector<vector<vector<float>>> weight(NN, vector<vector<char>>(N, vector<char>(N)));
+//    vector<vector<float>> versatility(NN*NN, vector<float>(N));
+//    vector<int> storedQ(NN), storedP(NN);
+//    vector<float> storedD(NN);
+//    vector<vector<vector<float>>> stored(NN, vector<vector<char>>(STOREMAX, vector<char>(N)));
+//    vector<float> wworstoutput(NN);
+//    vector<vector<vector<float>>> weight_rbm(NN, vector<vector<char>>(n_h, vector<char>(n_v)));
+//    vector<vector<float>> b_rbm(NN, vector<float>(n_h));
+//    vector<vector<float>> a_rbm(NN, vector<float>(n_v));
+    
+
+    
+//  float w[NN], minW, maxW, avgW, input_t[NN][N], output[NN][N], test[NN][N], maxOutput[N], weight[NN][N][N], wworstW, versatility[NN*NN][N];
+//	int   minP, maxP, storedQ[NN], storedP[NN];
+//	float storedD[NN], stored[NN][STOREMAX][N], wworstoutput[NN];
+//	float w1, w2, v1[N], v2[N];
+//	int recombination;
+//	float weight_rbm[NN][n_h][n_v], b_rbm[NN][n_h], a_rbm[NN][n_v];
+} DEME;
+
+
+
+class Darwinian_deme {
+public:
+
+Darwinian_deme(int n_NN);
+
+int NN, N, ENVNUM, B, P, DN;
+
+
+
+// RBM
+void train_rbm(vector<float> &v, int d, int n);
+void encode_rbm(vector<float> &v, int d, int n);
+void encode_rbm2(vector<float> &v, vector<float> &w, int d, int n);
+void encode_decode_rbm(vector<float> &v, vector<float> &p_h, int d, int n);
+void update_rbm(vector<float> &v_0, vector<float> &v, vector<float> &p_h_0, vector<float> &p_h, int d, int n);
+float sigmoid_rbm(float x);
+
+// Supervised Learning
+
+
+// General landscape variables
+vector<float> globalOptimumS;
+float globalOptimumW;
+vector<vector<float>> globalOptimumAll; // store optimum for each environment (for Pearson or Hamming fitnesses)
+// Block landscape
+vector<vector<vector<float>>> blockOptimaSequence; // store local optima sequences for each block (for block fitness only)
+vector<vector<float>> blockOptimaFitness;   // store local optima fitnesses for each block (for block fitness only)
+
+// Auxiliary
+//int matrixNeighbors[DN][8]; // spatial deme neighbors
+vector<vector<int>> matrixNeighbors;
+int STORE = (TYPE == 5) || (TYPE == 6) || (TYPE == 7) || ((TYPE == 4) && STORETEST); // store learned patterns in `stored` array
+int PN; // if `STORE`, store this many learned patterns
+//int learnCounter[DN][NN];
+vector<vector<int>> learnCounter;
+//DEME deme[DN];
+vector<DEME> deme;
+int test;
+
+
+float pearsonCorrelation(vector<float> &u, vector<float> &v); // Pearson product-moment correlation coefficient of vectors `u` and `v`
+float pearsonFitness(vector<float> &v);
+int hammingDistanceN(vector<float> &v, vector<float> &u, int n); // standard HD up to length `n`
+int hammingDistance(vector<float> &v, vector<float> &u); // standard HD of length N
+float relativeHammingDistance(vector<float> &v, vector<float> &u); // HD/N
+float hammingFitness(vector<float> &v); // 1 - (HD/N)
+int randomMinPosition(vector<float> &v, int n); // selects the position of the smallest value in vector `v` up to length `n`; if there are multiple 
+int randomMaxPosition(vector<float> &v, int n); // selects the position of the largest value in vector `v` up to length `n`; if there are multiple 
+int firstMaxPosition(vector<float> &v, int n); // selects the position of the largest value in vector `v` up to length `n`; if there are multiple 
+int samePatternQ(vector<float> &u, vector<float> &v); // boolean test of pattern identity
+void copyPattern(vector<float> &to, vector<float> &from_t);
+void copyPatternN(vector<float> &to, vector<float> &from_t, int n);
+void copyPatternNN(vector<float> &to, vector<float> &from_t);
+void invertPattern(vector<float> &v); // flip each bit in vector `v`
+void printPattern(vector<float> &v);
+//const char *vectorToString(vector<float> &v, int n); // cannot be called multiple times in e.g. printf!
+vector<char> vectorToString(vector<float> &v, int n); // cannot be called multiple times in e.g. printf!
+void mutatePattern(vector<float> &v, float mut); // mutate pattern per-digit mutation rate `mut`
+void exactlyMutatePattern(vector<float> &v, float mut); // mutates exactly `mut*N` bits (maximally N)
+void mutateSinglebitPattern(vector<float> &v, float mut);
+void randomPattern(vector<float> &v, float mut); // generates a random pattern with `mut` probability that a bit is +1
+void alternatingPattern(vector<float> &v, int l, int start); // alternating +1.0 and -1.0 with partition length `l`, starting with `start` (1 -> +1.0, 
+void continuousPattern(vector<float> &v, int from_t, int to); // [---..+++..---] where + subpattern runs from `from` to `to-1`
+void correlatePattern(vector<float> &v, float corr); // generate a partially uncorrelated version of vector `v` (saving back to `v`)
+void recombinePattern(vector<float> & u, vector<float> & v); // two-point recombination
+void setWeights();
+void randomWeights();
+void storePattern(vector<float> &v, int d, int n); // tests if `v` is stored in network `n` at deme `d` or not, and pushes/stores it to most recent p
+void trainNetwork(vector<float> &v, int d, int n); // training network `n` in deme `d` with vector `v`, updating `weight`
+void trainNetworksRandom(int n); // train each network on `n` random patterns (and store these patterns if `STORE == 1`)
+void updateOutput(vector<float> &v, int d, int n, int i); // update of neuron `i` in network `n` in deme `d` with threshold neuron model
+void updateNetwork(vector<float> &v, int d, int n); // updating network 'n' in deme `d` with input `v`; output is written into `v`
+void updateNetwork2(vector<float> &v, vector<float> &w, int d, int n); // updating network 'n' 
+void shuffleOutputs(int d); // shuffle `output` population for deme `d`
+float testAgainst(int e, int iter); // tests all networks of all demes `iter` times against the global optimum of environment `e`, returning average per-bit relative distance
+int closestStored(vector<float> &v, int d, int n); // returns the index of the stored pattern that is closest to `v` in deme `d`, network `n`
+void setBlockOptimaDefault(int env); // sets the same T optima (sequence and fitness) for the B blocks in environment `env` {1, 2, ...}
+float blockGlobalOptimumFitness(); // calculates global optimum using `blockOptimaSequence` and `blockOptimaFitness`
+void blockGlobalOptimumSequence(vector<float> &v); // calculates global optimum using `blockOptimaSequence` and `blockOptimaFitness`
+float blockFitness(vector<float> &v); // building block fitness; rescales range (min, max) to (min/max, 1.0)
+void setLandscape(int ls, int env); // sets `globalOptimumS` and `globalOptimumW`
+void setNeighborDemes(int n, int m); // sets up a lookup table for neughboring positions for each matrix element; 8 neighbours, no periodic boundary
+
+
+void evolution();
+void evolution_initialization(int t);
+void evolution_gen_environment(int t);
+void test_versatility(int t);
+vector<DEME> evolution_gen_update(int t);
+vector<DEME> evolution_gen_update_supervised(int t, vector<vector<double>> &foward_list);
+void evolution_gen_calcfitness(int t);
+vector<float> evolution_gen_calcbestfitness(int t);
+vector<DEME> evolution_gen_selection(int t);
+void evolution_gen_calcmutation(int t);
+bool evolution_gen_replacemutation(int t);
+void evolution_gen_learnbest(int t);
+void evolution_gen_learnworst(int t);
+void return_fitness(vector<float> &w, int d);
+void return_fitness_mutate(vector<float> &w, int d);
+
+};
+
+#endif // __CLANG_SAMPLE_H__
